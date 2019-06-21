@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<title>한국대학교</title>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+<script>
+	$(document).ready(function(){
+			var  myslider = $(".slider").bxSlider({
+				auto:true
+			});
+			$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				return false;
+			});
+		});
+
+$(document).ready(function(){
+			var  myslider = $(".slider2").bxSlider({
+				auto:true,controls:false
+				
+			});
+			$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				return false;
+			});
+		});	
+
+
+$(document).ready(function(){
+	var ticker = $('.slider_wrap').bxSlider({
+mode:'vertical',
+pager:false,
+controls:false,
+auto:true,
+	
+});
+
+$('.bottom_button').click(function(){
+ticker.goToPrevSlide();
+return false; 
+});
+
+$('.top_button').click(function(){
+ticker.goToNextSlide();
+return false; 
+});
+
+});
+
+
+
+
+
+
+</script>
+
+
+
+		
+		
+	
+
+	<style>
+	
+   /*content*/
+   .content_wrapper{width: 100%; height: 1307px; margin: 0 auto; background: url(img/배경01.jpg) no-repeat center; padding-top:40px;
+   background-size:cover ;}
+   /*.box{width: 100%; margin:0 auto; background-image: url(img/back.png);opacity:0.8;}*/
+   .top_content{width: 1200px; margin:0 auto;}
+ 
+   	 .top_content>.content_text{float: left; padding-bottom: 30px;}
+   	 .top_content>.content1{float: right; padding-top: 30px;}
+   	 .top_content>.content1>.card>ul{}
+   	 .top_content>.content1>.card>ul>li{float: left; padding:0 10px; }
+   	 .top_content>.content1>.card>ul>li>img{display: block;  }
+   	 .top_content>.content1>.card>ul>li>.text{}
+   	 .top_content>.content1>.card>ul>li>.text>p{color:white; text-align: center;}
+   	 .content_wrapper>ul.section{width: 1200px; margin: 0 auto;}
+   	 .content_wrapper>ul.section>li{width: 25%; height: 300px; /*border: 1px solid #000;*//* background-color: skyblue;*/ float: left; }
+   	 .content_wrapper>ul.section>li:nth-child(1){width:900px; height: 440px;}
+   	 .content_wrapper>ul.section>li:nth-child(2){width:300px; height: 450px;}
+   	 .content_wrapper>ul.section>li:nth-child(3){width:300px; height: 225px; background-color: #00163b;}
+   	 .content_wrapper>ul.section>li:nth-child(4){width:300px; height: 225px; background-color: #1651b7;}
+   	 .content_wrapper>ul.section>li:nth-child(5){width:300px; height: 225px; background-color: white;}
+   	 .content_wrapper>ul.section>li:nth-child(6){width:300px; height: 225px;}
+   	 .content_wrapper>ul.section>li:nth-child(7){width:300px; height: 225px;}
+   	 .content_wrapper>ul.section>li:last-child{width: 900px; height: 225px;}
+   	 /*section1 slider*/
+ 
+   .content_wrapper>ul.section>li:nth-child(1)>.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;}
+
+     .content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+   top: 0;right: -380px;
+    width: 100%;}
+
+    .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    background:none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #535353;}
+   /*.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background:#0045ad;}*/
+
+.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager.bx-default-pager a {
+   
+    text-indent: -9999px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0045ad;}*/
+
+
+
+/*.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background:#0045ad;
+}*/
+
+
+ .content_wrapper>ul.section>li:nth-child(8)> .bx-wrapper .bx-pager.bx-default-pager a.active{background-color: #f54337;}
+}
+ 
+
+
+
+
+
+    
+    
+/*button*/
+
+.section>.slider>div>button{margin-bottom:50px;}
+
+
+
+
+
+
+
+h2{color:white; padding-left:20PX; padding-top:20px;}
+.section>li.icon>img{margin:0 auto; line-height: 45px; padding-top:30px; }
+.section>li.icon>p{ float: left; color: white; margin-left:25px; text-align: center; padding:0 -20px;}
+
+/*section6 tr*/
+.tr{width: 300px; height: 225px;
+position: relative;  overflow:hidden; }
+.tr img{display: block;}
+.tr>.overlay{width: 300px; height: 225px;  background-color: #000;
+position: absolute; bottom: 0; top:180px; 
+transition: 0.3s;}
+.tr:hover .overlay{top: 0; opacity:0.5;}
+div.text01{text-align: center; color:white;
+left: 50%; top: 50%; position: absolute; top:16px; transform:translate(-50%,-50%);}
+.conent5{position: relative;}
+.content5>img{margin-left: 20px;}
+.content5>p{color:navy; font-weight: bold; font-size: 1.7em; padding:8px 20px; }
+.sns_logo>p.news_text{font-size:0.8em; color:black;position: absolute; left: 150px; bottom: 10px; }
+.sns_logo{position: relative;}
+.sns_logo>img{position: absolute; top: 20px; left: 140px;}
+}
+.wrapper{position: relative;}
+
+
+
+.bottom{position: relative;  }
+.bottom_wrap{width: 1200px; margin:0 auto;}
+.bottom>.box{width: 300px; height: 60px; background-color:white; position: absolute;
+ bottom:85px; left: 3px;}
+ .bottom>.box>ul>li{float: left;  font-size:1.1em; padding-left:30px; padding-top:15px;}
+ 
+
+  .bottom>.box>ul>div{position: relative;}
+ .bottom>.box>ul>div.one{font-size:1.2em;  font-weight:bold; color:#6b6b6b; position: absolute; left: 120px; top: 13px;}
+
+ .bottom>.box>ul>div.two{font-size:1.2em;font-weight:bold;color:#6b6b6b; position: absolute;right: 80px; top: 13px;}
+
+ .bottom>.box>ul>li.title01{color:#03163e; font-weight:bold; font-size:1.1em; padding-left:20px;}
+ .bottom>.box>ul>li.day{padding-left:50px;}
+
+.bottom>.box2{width: 900px; height: 60px; background-color:white; position: absolute; bottom: 85px; right:-8px; }
+
+
+.top_button{position: absolute;right: 0px;top: 0;}
+.bottom_button{position: absolute;right:0px; bottom: 0;}
+
+
+.slider_wrap>div>li.title{padding-left: 30px; color:#686868; font-weight:bold;}
+.slider_wrap>div>li.subject{position: absolute; right:100px; color:#6b6b6b;}
+.slider_wrap>div>li{padding:18px 10px;}
+
+
+/*section4*/
+
+.top_content>.section4>h2{color:white; padding-left:20PX; padding-top:10px;}
+.top_content>.section4{position: relative;}
+
+
+
+.section4>ul.list>li{margin-top:30px; font-size:0.9em; color:white; /*list-style:square;*/}
+.section4>ul.list>li>p{float: left; padding-left:15px; padding-top:8px;}
+.section4>ul{position: relative;}
+.section4>ul.list:before{content:"";display: block;width: 250px; border: 1px solid #fff; position: absolute;left: 20px; bottom: 120px;}
+.section4>ul.list>li>span{float:right;padding-right:10px; padding-top: 5px;}
+
+
+/*btn*/
+
+.btn_wrap>.btn{position: absolute; left: 100px;	bottom: 80px;width: 170px;	 height: 40px;	background-color: #192c4d;
+color:white; text-align: center; padding: 8px 0; font-size:0.8em;	}
+
+.btn_wrap>.btn>a{color:white;}
+
+
+.btn_wrap>.btn:hover{opacity:0.8;}
+
+.btn_wrap01>.btn01>a{color:white;}
+.btn_wrap01{position: relative;}
+.btn_wrap01>.btn01{width: 170px;	height: 40px; 	background-color:#000; border:1px solid #fff; position: absolute; 
+	bottom: 80px; left: 50px; text-align: center; padding: 8px 0; font-size:0.8em; }
+
+.btn_wrap01>.btn01:hover{opacity:0.8;}
+
+.btn_wrap02>.btn02{position: absolute;right: 690px; bottom: 40px;		 width: 170px;	height: 40px; background-color:#ff4538;	border: 1px solid #fff;
+	text-align: center;	padding: 8px 0;}
+
+	.btn_wrap02>.btn02:hover{opacity:0.8;}
+.btn_wrap02>.btn02>a{color:white;  font-size:0.8em;}
+
+
+
+/*.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #f54337;
+}
+*/
+.content_wrapper>ul.section>li:nth-child(1)>.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0045ad;
+}
+
+
+
+
+/*section7*/
+
+
+li.section7>ul{}
+.section7>ul>li.tran_img{width: 300px; height: 225px; position: relative; overflow:hidden;}
+.section7>ul>li.tran_img>img{display: block;}
+.section7>ul>li.tran_img>.img01{position: absolute; z-index:1;
+cursor:pointer;}
+
+.section7>ul>li.tran_img>.img02{position: absolute; top: 0px;
+	transition:0.3s; transform:scale(1);
+}
+
+.section7>ul>li.tran_img>.back{width: 300px; height: 225px;position: absolute; background-color: blue; opacity:0;
+transition:0.3s;}
+
+.section7>ul>li.tran_img:hover img.img02{top: 0;}
+.section7>ul>li.tran_img:hover img.img02{transform:scale(0.8);}
+.section7>ul>li.tran_img:hover .back{opacity:0.5;}
+
+
+
+
+
+
+
+
+/*header*/
+
+
+header#main_header{height: 160px;}
+header#main_header>.header_top_wrap{background-color:#0044af; height: 40px;}
+header#main_header>.header_top_wrap>.header_top{width: 1200px; margin:0 auto; }
+header#main_header>.header_top_wrap>.header_top>.util_menu1{}
+header#main_header>.header_top_wrap>.header_top>.util_menu1>li{float: left; border-right:2px solid #0044af;}
+header#main_header>.header_top_wrap>.header_top>.util_menu1>li>a{display: block; text-align: center;
+line-height:35px;}
+
+
+.header_top>.util_menu1>li.white{width: 120px;height: 40px; background-color:white }
+	.header_top>.util_menu1>li.navy{width: 120px;height: 40px; background-color:#00163b;}
+	.header_top>.util_menu1>li.navy>a{color:white;}
+	.header_top>.util_menu1>li.white>a{color:#cdcdcd; }
+
+
+
+
+header#main_header>.header_top_wrap>.header_top>.util_menu2{float: right;}
+header#main_header>.header_top_wrap>.header_top>.util_menu2>li{float: left; }
+header#main_header>.header_top_wrap>.header_top>.util_menu2>li>a{display: block; line-height:40px; padding:0 10px;
+color:white; font-size:0.8em;}
+header#main_header>.header_top_wrap>.header_top>.util_menu2>li.size>a>img{display: block; padding-top:13px;}
+
+
+
+
+
+.header_bottom_wrap{height: 120px;}
+.header_bottom{width: 1200px; margin:0 auto; }
+.header_bottom>.logo{float: left; padding-top:20px;}
+.header_bottom>.main_menu{float: right; margin-right:125px;}
+.header_bottom>.main_menu>li{float: left; }
+.header_bottom>.main_menu>li>a{ display: block; padding:0 20px; 
+   	color:#787878; font-weight: bold; line-height:120px;}
+
+
+
+   	/*footer*/
+
+   	.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    width: 100%;
+}
+
+	.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager {
+    text-align: right;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    padding-right:30px;
+
+}
+
+.content_wrapper>ul.section>li:nth-child(8)>.bx-wrapper .bx-pager.bx-default-pager a {
+    text-indent: -9999px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+.footer_wrap{width: 1200px; margin:0 auto; padding-bottom:30px;}
+.footer_wrap>.logo_Box{width: 300px; float: left;}
+.footer{width: 900px;float: right; padding-top:20px; }
+.footer>ul.footer_menu{position: relative;}
+.footer>ul.footer_menu>li{float: left;}
+.footer>ul.footer_menu>li:after{content:""; display: block; width: 1px; height: 10px; background-color: #000; position: absolute; top: 7px;  margin-left:-5px; }
+.footer>ul.footer_menu>li:first-child:after{content:"";display: none;}
+.footer>ul.footer_menu>li>a{display: block; padding-right:25px;}
+.footer_text{padding-top:15px;}
+.footer_text>p{color:#9c9c9c; padding:2px 0; font-size:0.8em;}
+.footer_text>h4{color:#9c9c9c; padding-top:10px; font-size:0.8em;}
+   	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+	
+	
+	</style>
+</head>
+<body>
+
+
+	<!-- header- top -->
+
+
+<header id="main_header">
+	<div class="header_top_wrap">
+
+		<div class="header_top clearfix">
+			<ul class="util_menu1">
+
+               <li class="white"><a href="#">대학교</a></li>
+               <li class="navy"><a href="#">입학안내</a></li>
+               <li class="navy"><a href="#">대학원</a></li>
+
+
+             </ul>
+
+           <ul class="util_menu2 clearfix">
+					<li class="size"><a href="#">글자크기</a></li>
+					<li class="size"><a href="#">
+						<img src="../images1/util.png" alt="">
+					</a></li>
+					
+
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+
+				
+			</div>
+
+
+
+		</div>
+
+		<div class="header_bottom_wrap">
+			<div class="header_bottom">
+
+				<div class="logo">
+					<img src="../images1/logo.png" alt="">
+				</div>
+
+
+				<ul class="main_menu clearfix">
+
+				<li><a href="#">대학소개</a></li>
+				<li><a href="#">학과소개</a></li>
+				<li><a href="#">학사안내</a></li>
+				<li><a href="#">대학생활</a></li>
+				<li><a href="#">학생지원센터</a></li>
+				</ul>
+				
+			</div>
+
+		</div>
+
+		
+	</div>
+</header>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+		<!-- 	<div class="main_wrap">
+				<img src="" alt="">
+
+			<ul class="main_menu clearfix">
+
+				<div class="left">
+					<li><a href="#">
+						<img src="../images1/logo.png" alt="">
+					</a></li>
+				</div>
+
+				<li><a href="#">대학소개</a></li>
+				<li><a href="#">학과소개</a></li>
+				<li><a href="#">학사안내</a></li>
+				<li><a href="#">대학생활</a></li>
+				<li><a href="#">학생지원센터</a></li>
+				<li>
+					<a href="#"><img src="../images1/logo1.png" alt=""></a>
+					
+				</li>
+
+			</ul>
+			</div>
+
+		</div>
+
+	</div> -->
+
+
+		<div class="content_wrapper">
+			<div class="top_content">
+				<div class="content_text">
+					<img src="img/text.png" alt="">
+				</div>
+				<div class="content1">
+			
+					<div class="card">
+					<ul class="clearfix">
+				
+						<li>
+							<a href="#"></a>
+							<img src="img/img1.png" alt="">
+							<div class="text">
+							<p>입학절차안내</p>
+						</div>
+						
+						</li>
+				
+				
+						
+						<li>
+							<a href="#"></a>
+							<img src="img/img2.png" alt="">
+							<div class="text">
+							<p>입학설명회</p>
+						</div>
+						
+						</li>
+				
+				
+						
+						<li>
+							<a href="#"></a>
+							<img src="img/img3.png" alt="">
+							<div class="text">
+							<p>장학제도</p>
+						</div>
+						
+						</li>
+				
+				
+						
+						<li>
+							<a href="#"></a>
+							<img src="img/img4.png" alt="">
+							<div class="text">
+							<p>증명서발급</p>
+						</div>
+						
+						</li>
+				
+					</ul>
+			
+					</div>
+				</div>
+			</div>
+
+
+			<ul class="section clearfix">
+	  			
+	  			<li class="section01">
+	  				<div class="slider">
+
+	  				<div class="btn_wrap">
+	  					
+	  					<div class="btn"><a href="	#">자세히보기 ▶</a></div>
+	  					<img src="img/section1.png" alt="">
+
+	  				</div>	<div class="btn_wrap">
+	  					
+	  					<div class="btn"><a href="	#">자세히보기 ▶</a></div>
+	  					<img src="img/section1.png" alt="">
+	  					
+	  				</div>
+	  					<div class="btn_wrap">
+	  					
+	  					<div class="btn"><a href="	#">자세히보기 ▶</a></div>
+	  					<img src="img/section1.png" alt="">
+	  					
+	  				</div>
+	  					<div class="btn_wrap">
+	  					
+	  					<div class="btn"><a href="	#">자세히보기 ▶</a></div>
+	  					<img src="img/section1.png" alt="">
+	  					
+	  				</div>
+	  				
+	  				
+	  				            
+	  				            
+	  				
+	  				
+
+	  				
+
+
+	  				</div>
+
+	  				<div class="prevBtn"><a href="#"><img src="images/btn_prev.png" alt=""></a></div>
+	  				<div class="nextBtn"><a href="#"><img src="images/btn_next.png" alt=""></a></div>
+	  			</li>
+
+	  			
+
+	  			<li>
+	  				<div class="btn_wrap01">
+	  					
+	  					<div class="btn01"><a href="	#">자세히보기 ▶</a></div>
+	  					
+	  				<img src="img/section2.png" alt="">
+
+	  			</div>
+
+	  			</li>
+	  					  			
+	  			<li class="icon">
+	  				<h2>HOT LINK</h2>
+	  				<img src="img/section3_icon.png" alt="">
+	  				<p>국제교류<br>
+	  				  센터</p>
+	  				<p>원격지원<br>  시스템</p>
+	  				<p>예산/결산 <br>  공고</p>
+	  			</li>
+
+
+	  			<li class="section4">
+	  				
+	  				<h2>공지사항</h2>
+	  				
+
+	  				<ul class="list clearfix">
+
+	  					<li>
+
+	  					<p>· [공지] 한국대학교 웹진..</p><span> 2016-06-12</span>
+	  				</li>
+
+	  				<li>
+	  					<p>· [보도]우수대학교 선정 수상</p><span> 2016-06-17</span>
+	  				</li> 
+
+	  				<li>
+	  					<p>· [공지]대학입시 설명회</p><span> 2016-06-05</span>
+	  				</li>
+
+	  				<li>
+	  					<p>· [공지]2016년 1학기 성적..</p><span> 2016-06-14</span>
+	  				</li>
+
+	  				
+
+	  				</ul>
+
+                  
+	  			</li>
+
+
+
+	  			<li class=content5>
+	  				<p>SNS NEWS<p>
+
+	  					
+	  				<img src="img/content5_img.png" alt="">	
+	  				<div class="sns_logo">
+	  					<p class="news_text">한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관</p>
+	  					<img src="img/content5_img2.png" alt="">
+	  				</div>
+	  			
+	  				
+	  			</li>
+
+	  			<li class="tr">
+	  				
+
+
+	  				<img src="img/section4.png" alt="">
+
+	  				<div class="overlay">
+	  					<div class="text01">캠퍼스 투어</div>
+
+	  				</div>
+	  			
+	  			</li>
+
+
+
+
+
+	  			<li class="section7">
+
+	  			<ul>
+	  				<li class="tran_img">
+	  					<img src="img/01.png" class="img01" alt="">
+	  					<img src="img/img6.jpg"  class="img02"alt="">
+	  					<div class="back"></div>
+	  				</li>
+	  			</ul>
+
+	  			</li>
+	  			
+
+
+
+	  		
+
+	  			<li class="section8">
+	  				<div class="slider2">
+
+	  				<div class="btn_wrap02">
+	  					<div class="btn02"><a href="#">입학사전예약 ▶</a>	</div>
+
+	  					<img src="img/last.png" alt="">
+	  				</div>
+	  				<div class="btn_wrap02">
+	  					<div class="btn02"><a href="#">입학사전예약 ▶</a>	</div>
+
+	  					<img src="img/last.png" alt="">
+	  				</div>
+	  				<div class="btn_wrap02">
+	  					<div class="btn02"><a href="#">입학사전예약 ▶</a>	</div>
+
+	  					<img src="img/last.png" alt="">
+	  				</div>
+	  				<div class="btn_wrap02">
+	  					<div class="btn02"><a href="#">입학사전예약 ▶</a>	</div>
+
+	  					<img src="img/last.png" alt="">
+	  				</div>
+	  				
+	  				</div>
+	  			</li>
+	  		</ul>
+		</div>
+</div>
+
+	<!-- bottom -->
+
+	
+
+		<div class="bottom_wrap">
+			<div class="bottom">
+			
+				<!-- box1 -->
+				<div class="box">
+					<ul clasas="clearfix">
+						<li class="title01">학사일정</li>
+						
+						<li class="day"> 2016 07 </li>
+			
+						<div class="one"> < </div>
+						<div class="two"> > </div>
+					</ul>
+					
+				</div>
+			
+				<!-- box2 -->
+			
+			
+				<div class="box2">
+				<div class="slider_wrap">
+			
+					<div class="clearfix">
+						<li class="title">2016-1학기 성적 열람 및 상담 신청</li>
+						<li class="subject">성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이</li>
+					</div>
+			
+			
+					<div>
+						<li class="title">2016-2학기
+						장학금 신청</li>
+						<li class="subject"> 장학금신청은 해당 조건에 부합하는 학생들만 신청이
+						가능합니다</li>
+					</div>
+			
+			
+				</div>
+			
+				<div class="top_button"><a href="#">
+					
+				<img src="img/topbutton.png" alt="">
+				</a></div>
+			
+				<div class="bottom_button"><a href="#">
+					
+				<img src="img/bottom_button.png" alt="">
+				</a></div>
+			
+			
+			
+				</div>
+			
+			
+			</div>
+		</div>
+
+
+
+
+
+		
+	
+
+
+
+	
+
+	<div class="footer_wrap">
+		<div class="logo_Box"></div>
+		<div class="footer">
+			<ul class=" footer_menu clearfix">
+				<li><a href="#">회사소개</a></li>
+
+
+				<li><a href="#">한국 대학교</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">이용정책</a></li>
+				<li><a href="#">입점/제휴문의 및 광고</a></li>
+				<li><a href="#">이메일 무단수집거부</a></li>
+			</ul>
+		
+		<div class="footer_text">
+			<p>대표자 : 홍길동 서울특별시 구로구 구로로 300 (구로동6가)   사업자등록번호 : 123-56-7890234</p>
+			<p>통신판매업 신고번호 : 제 1234-서울 구로구 -1004호 개인정보관리 책임자 : 홍길동 소비자피해보상보험</p>
+			<p>고객센터 : 1234-5678   FAX:02-1234-5678   HANGUKUNIVERSLTY@HANGUK.COM</p>
+			<h4>COPYRIGHT ⓒ HANGUK . ALL RIGHTS PESERVED.</h4>
+		</div>
+		</div>
+	</div>
+
+
+				
+		
+
+
+
+	
+
+	
+</body>
+</html>

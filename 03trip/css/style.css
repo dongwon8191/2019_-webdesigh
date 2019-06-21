@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+/*header*/
+
+
+#main_header{height: 150px;}
+#main_header>.header_top_wrap{width: 100%; height: 90px;
+	background-image:url(../img/04header.jpg);}
+	
+	
+	
+#main_header>.header_top_wrap>.top_wrap{width:980px;
+margin:0 auto; position: relative; }
+
+#main_header>.header_top_wrap>.top_wrap>.logo>img{
+	display: block; padding-top:10px;}
+
+#main_header>.header_top_wrap>.top_wrap>.search_wrap{
+	width: 300px; height: 30px;
+	background-color:white; position: absolute;
+	top: 30px; right: 350px;
+	border-radius:15px;
+}
+#main_header>.header_top_wrap>.top_wrap>.searchbox{position: relative;}
+
+#main_header>.header_top_wrap>.top_wrap>.search_wrap>.searchbox>img{position: absolute; right: 20px;
+
+}
