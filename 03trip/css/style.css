@@ -4,9 +4,13 @@
 /*header*/
 
 
-#main_header{height: 150px;}
-#main_header>.header_top_wrap{width: 100%; height: 90px;
-	background-image:url(../img/04header.jpg);}
+#main_header{/*height: 160px;*/}
+#main_header>.header_top_wrap{ /*height: 90px;*/
+
+	background-image:url(../img/04header.jpg);
+
+background-size: cover;
+}
 	
 	
 	
@@ -14,16 +18,284 @@
 margin:0 auto; position: relative; }
 
 #main_header>.header_top_wrap>.top_wrap>.logo>img{
-	display: block; padding-top:10px;}
-
-#main_header>.header_top_wrap>.top_wrap>.search_wrap{
-	width: 300px; height: 30px;
-	background-color:white; position: absolute;
-	top: 30px; right: 350px;
-	border-radius:15px;
+	display: block; padding-top:4px; padding-left:60px;
 }
-#main_header>.header_top_wrap>.top_wrap>.searchbox{position: relative;}
 
-#main_header>.header_top_wrap>.top_wrap>.search_wrap>.searchbox>img{position: absolute; right: 20px;
+#main_header>.header_top_wrap>.top_wrap>.search-box{
+ height: 30px; width: 300px; background-color: #fff;
+ border-radius:15px;
+	position: absolute; top: 18px;	 left: 300px;}
+
+#main_header>.header_top_wrap>.top_wrap>.search-box>input{ position: absolute;
+	left: 80px; top: 8px; border:0 none; font-weight: bold;
 
 }
+#main_header>.header_top_wrap>.top_wrap>.search-box>p{padding-left:15px;
+padding-top:5px; font-size:0.8em; font-weight:bold; }
+
+#main_header>.header_top_wrap>.top_wrap>.search-box>img{
+position: absolute; top: 3px; right: 10px;	
+}
+#main_header>.header_top_wrap>.top_wrap>.tel>p{line-height:45px;
+	position: absolute; right: 320px; bottom: 5px;
+	color:white; font-size:1.3em; font-weight:bold;
+
+}
+#main_header>.header_top_wrap>.top_wrap>.tel>p.tel2{
+	position: absolute; right:280px;
+}
+	#main_header>.header_top_wrap>.top_wrap>.tel>p.tel3{
+	position: absolute; right:220px;
+}
+
+#main_header>.header_top_wrap>.top_wrap>.tel>p.tel4{
+	position: absolute; right:160px;
+}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo{
+	position: absolute; right:35px; bottom:15px;
+}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo>li{
+	float: left; 
+}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo>li>a{
+	display: block; padding:0 2px;}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo>li>a>img{}
+
+
+#main_header>.header_bottom_wrap{ background-color:#f3f3f3; 
+	border-bottom: 3px solid #0e73a7;}
+#main_header>.header_bottom_wrap>.bottom_wrap{height: 55px;
+	width: 980px; margin:0 auto;}
+#main_header>.header_bottom_wrap>.bottom_wrap>li{float: left;width: 163.33px;
+border-right:1px solid #e6e6e6;	}
+#main_header>.header_bottom_wrap>.bottom_wrap>li:nth-child(1){
+	border-left:1px solid #e6e6e6;}
+#main_header>.header_bottom_wrap>.bottom_wrap>li>a{display: block; 
+ text-align: center;line-height:55px; }
+ #main_header>.header_bottom_wrap>.bottom_wrap>li>a:hover{
+ 	color:#0e73a7; }
+
+ 	/*content*/
+
+ 	div#content_wrap{width: 100%;height: 1250px;
+ 		background-image: url(../img/back.jpg);
+ 		background-size:cover;
+ 	}
+ 	div#content_wrap>img{ display: block;
+ 		/*width: 500px; height: 400px;*/ position: absolute;
+ 		right:100px; top: 250px;}
+
+ 		div#content_wrap>.content{ position: relative;
+ 			width: 980px; margin:0 auto;}
+ 		div#content_wrap>.content>h1.deco2{
+ 			text-decoration:underline;
+ 			position: absolute; right: 110px; top:75px;
+ 			font-size:3em;  }
+ 		div#content_wrap>.content>h1.deco1{
+ 			position: absolute; right: 200px; top: 80px;
+ 			font-size:3em; 
+ 		}
+
+
+ 		.content>.box_wrap{ width: 480px; height: 300px; 
+ 		padding-top:60px; }
+ 		.content>.box_wrap>.tab_menu{ float: left;}
+ 		.content>.box_wrap>.tab_menu>ul{}
+ 		.content>.box_wrap>.tab_menu>ul>li{
+ 			width: 130px; height: 75px;}
+
+ 			.content>.box_wrap>.tab_menu>ul>li>img{
+ 				display: block;}
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab1{
+ 				background-color:white; position: relative;
+ 			}
+
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab2{
+ 				background-color:#006599; position: relative;
+ 				border-bottom: 1px solid #0078a7;
+ 			}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab3{
+ 				background-color:#0099cb;
+ 				 border-bottom: 1px solid #00a7d4;
+ 				 position: relative;
+ 				 border-top: 1px solid #015287;
+ 			}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab4{
+ 				background-color:#0099cb;
+ 				 border-top: 1px solid #0087bf;
+ 				 position: relative;
+ 			}
+
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab1>a{
+ 				color:#000; font-weight:bold;
+ 			}
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab2>a{
+ 				color:#dcedf5; font-weight:bold;
+ 			}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab3>a{
+ 				color:#dcedf5;  font-weight:bold;
+ 			}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab4>a{
+ 				color:#dcedf5; font-weight:bold;
+ 			}
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab1>a{
+ 				position: absolute; right: 15px; top: 25px;}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab1>img{
+ 				position: absolute; left: 5px;top: 20px;
+ 			}
+
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab2>a{
+ 				position: absolute; right: 15px; top: 25px;}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab2>img{
+ 				position: absolute;  left: 5px;top: 20px;
+ 			}
+
+
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab3>a{
+ 				position: absolute; right: 20px; top: 25px;}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab3>img{
+ 				position: absolute;  left: 5px;top: 20px;
+ 			}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab4>a{
+ 				position: absolute; right: 20px; top: 25px;}
+
+ 			.content>.box_wrap>.tab_menu>ul>li.tab4>img{
+ 				position: absolute;  left: 5px;top: 20px;
+ 			}
+
+
+ 			.content>.box_wrap>.form_box{
+ 				width: 350px; height: 300px;
+ 				 background-color: white;
+ 				float: right;
+ 			}
+
+
+
+
+ 			/*form*/
+
+ 			.f_box>ul>li.golo_box{
+ 				padding-top:15px;
+ 				padding-left:15px;
+ 			}
+
+
+ 			.f_box label{display: block; margin: 
+ 			 font-size:0.9em;
+ 			 font-weight:bold;}
+ 			.f_box select#golo{
+ 				width: 275px; height: 30px;
+ 			    font-size:0.8em;}
+
+
+
+ 			.f_box>ul>li.f_cell{width: 280px; margin:0 auto;}
+ 			.f_box>ul>li.f_cell>.cleft{width: 50%;float: left; }
+
+ 			.f_box>ul>li.f_cell>.cright{width: 50%;float: right;}
+ 			.f_box>ul>li.f_cell>.cright1{width: 50%;float: right;}
+
+ 			.f_box>ul>li.f_cell>.cleft>input#sdate{
+ 				width: 130px; height: 30px;
+ 			}
+ 			.f_box>ul>li.f_cell>.cright>input#edate{
+ 				width: 130px; height: 30px;
+ 			}
+
+ 			.f_box>ul>li.f_cell>.cleft>select#cgrade{
+ 				width: 120px; height: 30px;
+ 			}
+
+ 			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
