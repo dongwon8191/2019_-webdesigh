@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+
+/*header*/
+
+
+#main_header{/*height: 160px;*/}
+#main_header>.header_top_wrap{ /*height: 90px;*/
+
+	background-image:url(../img/04header.jpg);
+
+background-size: cover;
+}
+	
+	
+	
+#main_header>.header_top_wrap>.top_wrap{width:980px;
+margin:0 auto; position: relative; }
+
+#main_header>.header_top_wrap>.top_wrap>.logo>img{
+	display: block; padding-top:4px; padding-left:60px;
+}
+
+#main_header>.header_top_wrap>.top_wrap>.search-box{
+ height: 30px; width: 300px; background-color: #fff;
+ border-radius:15px;
+	position: absolute; top: 18px;	 left: 300px;}
+
+#main_header>.header_top_wrap>.top_wrap>.search-box>input{ position: absolute;
+	left: 80px; top: 8px; border:0 none; font-weight: bold;
+
+}
+#main_header>.header_top_wrap>.top_wrap>.search-box>p{padding-left:15px;
+padding-top:5px; font-size:0.8em; font-weight:bold; }
+
+#main_header>.header_top_wrap>.top_wrap>.search-box>img{
+position: absolute; top: 3px; right: 10px;	
+}
+#main_header>.header_top_wrap>.top_wrap>.tel>p{line-height:45px;
+	position: absolute; right: 320px; bottom: 5px;
+	color:white; font-size:1.3em; font-weight:bold;
+
+}
+#main_header>.header_top_wrap>.top_wrap>.tel>p.tel2{
+	position: absolute; right:280px;
+}
+	#main_header>.header_top_wrap>.top_wrap>.tel>p.tel3{
+	position: absolute; right:220px;
+}
+
+#main_header>.header_top_wrap>.top_wrap>.tel>p.tel4{
+	position: absolute; right:160px;
+}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo{
+	position: absolute; right:35px; bottom:15px;
+}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo>li{
+	float: left; 
+}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo>li>a{
+	display: block; padding:0 2px;}
+#main_header>.header_top_wrap>.top_wrap>.sns_logo>li>a>img{}
+
+
+#main_header>.header_bottom_wrap{ background-color:#f3f3f3; 
+	border-bottom: 5px solid #0e73a7;}
+#main_header>.header_bottom_wrap>.bottom_wrap{height: 55px;
+	width: 980px; margin:0 auto;}
+#main_header>.header_bottom_wrap>.bottom_wrap>li{float: left;width: 163.33px;
+border-right:1px solid #e6e6e6;	}
+#main_header>.header_bottom_wrap>.bottom_wrap>li:nth-child(1){
+	border-left:1px solid #e6e6e6;}
+#main_header>.header_bottom_wrap>.bottom_wrap>li>a{display: block; 
+ text-align: center;line-height:55px; }
+ #main_header>.header_bottom_wrap>.bottom_wrap>li>a:hover{
+ 	color:#0e73a7; }
+
+
+ 	/*header_bottom2*/
+
+
+ 	.header_bottom{height: 290px; background-color:pink;
+
+ 		background:url("../img/subimg01.jpg"); 
+
+
+
+ 	}
+
+ 	.logo2{width: 980px; position: relative;}
+ 	.logo2>h1{color:white;position: absolute; left:650px; top: 30px;
+ 		font-size:4.5em;}
+
+ 		.logo2>p{color:white;position: absolute; right:-10px; top: 130px;}
+
+ 		.logo2>img{display: block; position: absolute; left:670px; top: 50px;}
+ 		
+
+
+
+
+
+
+ 	.header_bottom2_wrap{ background-color:#000; opacity:0.6;
+ 		
+
+ 		}
+
+
+ 		.bottom2{width: 980px;margin:0 auto; height: 35px; }
+ 	.header_bottom2_wrap>.bottom2>ul{float: right; margin-right:80px;
+ 		}
+ 	.header_bottom2_wrap>.bottom2>ul>li{ float: left;  padding-right:15px;}
+ 	.header_bottom2_wrap>.bottom2>ul>li>a{display: block; color:white; line-height:30px;
+ 		font-size:0.8em;}
+
+
+
+ 		/*content*/
+
+
+
+ 		.content_wrap{position: relative;
+ 			height: 970px;background-image:url(../img/content_back.jpg);}
+ 		.content{width: 980px; position: absolute; top: -70px;
+ 			left: 380px;}
+
+ 			.content>img{margin-bottom:30px;}
+
+ 			.content>p.one{position: absolute; top: 70px; right: 150px;
+ 				font-size:0.8em; color:#949494; font-weight:bold;}
+ 			.content>p.two{position: absolute; top: 70px; right: 90px;
+ 				font-size:0.8em; color:#016599; font-weight:bold;
+ 				text-decoration-line:underline;}
+
+ 				.footer_wrap{}
+ 				.footer_wrap>.main_footer{width: 980px; margin:0 auto;}
+ 				.footer_wrap>.main_footer>ul.footer_menu{padding-bottom:10px;}
+ 				.footer_wrap>.main_footer>ul.footer_menu>li{float: left; padding-right:20px; }
+ 				.footer_wrap>.main_footer>ul.footer_menu>li:nth-child(2){font-weight:bold;}
+ 				.footer_wrap>.main_footer>ul.footer_menu>li>a{display: block;}
+
+ 				.footer_text>p{font-size:0.8em; color:#686868;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
