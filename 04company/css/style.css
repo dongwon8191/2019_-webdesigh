@@ -1,16 +1,16 @@
 @charset "utf-8";
 #main_header{
-	height: 1950px; background-color:lightgray;}
+	height: 1950px; _background-color:lightgray; position: relative;}
 
 #header_top{
 	width: 1260px; height: 50px;
-	background-color:pink;
+	_background-color:pink;
 position: absolute; top: 40px; left: 50%; margin-left:-630px;
 z-index:1;
 }
 
-#header_top > h1{float: left; background-color:#f00;}
-#header_top > #main_menu{float: right; background-color:#0f0;}
+#header_top > .logobox{float: left; _background-color:#f00; }
+#header_top > #main_menu{float: right; _background-color:#0f0; padding-top:20px;  }
 #main_menu>ul{}
 #main_menu>ul>li{float: left;}
 #main_menu>ul>li>a{display: block; line-height:50px; padding:0 30px; font-weight:bold; color:white;}
@@ -30,5 +30,147 @@ z-index:1;
 	background:url(../images/top_img2.jpg) no-repeat center;
 	background-size:cover;
 }
+
+.slider_wrap .slider_txt{
+	width: 700px; position: absolute;
+	 left:50%; margin-left:-350px;
+	 
+	  top: 30%; color:white; text-align: center;
+
+	  _background-color:rgba(255,255,255,0.5);
+
+	  _padding:20px 20px 30px 20px;
+
+	  _box-shadow:0 0 10px #000;
+
+}
+
+.slider_wrap h3{font-size:3.5em; _text-shadow:0px 0px 6px #000;}
+.slider_wrap h3:after{content:"";display: block; width: 300px; height: 3px;
+background-color:#fff; margin: 20px auto;}
+.slider_wrap p{  font-weight:bold;  text-shadow:0px 0px 6px #000;}
+
+
+.bx-wrapper {
+    -moz-box-shadow:none;
+     -webkit-box-shadow: none; 
+     box-shadow:none; 
+     border:0 none; 
+     background:none; 
+}
+
+
+/*header content*/
+
+
+#main_header .content{
+	/*width: 1260px; h315*4*/
+	width: 1260px; height: 1260px;
+    position: absolute; bottom: 0; left: 50%; margin-left:-630px;
+    background-color:#fff;}
+
+    #main_header .content li{
+    	float: left; 
+    	 width: 25%; height: 315px;
+    	  _border: 1px solid #000; }
+
+    #main_header .content li.content1st{background-image:url(../images/main_img_back_01.jpg);
+    padding-top:80px; 
+    padding-left:100px;
+    text-align: center;
+    color:white;
+    font-weight:bold;}
+
+     #main_header .content li.content5st{background-image:url(../images/main_img_back_02.jpg);
+    padding-top:80px; 
+    padding-left:100px;
+    text-align: center;
+    color:white;
+    font-weight:bold;}
+
+     #main_header .content li.content6st{background-color:#68b09a;
+    padding-top:80px; 
+    padding-left:100px;
+    text-align: center;
+    color:white;
+    font-weight:bold;}
+
+    .content .content1st img{}  
+    .content .content1st p{padding-right:110px; font-size:1.2em;}  
+    .content .content5st p{padding-right:110px; padding-top:10px;  font-size:1.2em; }  
+    .content .content6st p{padding-right:110px; padding-top:10px;  font-size:1.2em;}
+    .content .content11st p{padding-right:110px; padding-top:10px;  font-size:1.2em;}
+
+
+    .content li.content7st{ width: 50% !important; color:white; position: relative;
+
+    }  
+
+    .content .card{position: absolute; top: 30px; left: 40px;
+ }
+
+ .content .card p{font-size:1.8em; font-weight:bold;}
+
+
+ .content .card h3:after{content:""; display: block; 
+ width: 50px; height: 3px; background-color:white;
+margin:15px 0;}
+
+ 
+
+    .content li.content8st{
+    	height: 630px !important; position: relative;  color:white;
+    }
+
+    .content li.content9st{ width: 50% !important;
+      position: relative;
+       color:#5e5e5e;
+       font-weight:bold;
+
+
+
+    } 
+
+    .content .card h3.bar:after{content:""; display: block; 
+ width: 50px; height: 3px; background-color:#5e5e5e;
+margin:15px 0;}
+
+
+
+.content .card p.x{ padding-left:30px;}
+.content .card p.y{ font-size:0.9em; text-align: center; padding-top:5px; font-weight:bold;}
+
+ #main_header .content li.content11st{
+ 	background-color:#6993a1;
+ 	 padding-top:80px; 
+    padding-left:100px;
+    text-align: center;
+    color:white;
+    font-weight:bold;
+ }
+
+  .content li.content12st{ width: 50% !important;
+      position: relative;
+
+  }
+
+  .content .card h3.x2{color:#354b52; font-size:1.5em;}
+
+    .content .card h3.x2:after{content:""; display: block; 
+ width: 50px; height: 3px; background-color:#354b52;
+margin:15px 0;}
+
+
+
+li.content2st>.cardbox{padding-left:30px; padding-top:50px;}
+li.content2st>.cardbox>h3.news{ font-weight:bold; font-size:1.5em; }
+li.content2st>.cardbox>p.text{font-size:0.9em;  font-weight:bold; padding-top:20px; }
+li.content2st>.cardbox>img{display: block; padding-top:90px;padding-left:180px; }
+
+
+
+
+
+
 
 
