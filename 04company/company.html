@@ -12,8 +12,24 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
-		});
+			var myslider = $(".slider").bxSlider({
+				_auto:true
+
+			});
+		
+
+		$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				return false;
+			});
+		
+});
+
 	</script>
 </head>
 <body>
@@ -58,8 +74,42 @@
 						</div>
 					</li>
 
+
+					<li class="3">
+						<div class="slider_txt">
+							<h3>Movement in Silence.<br>Movement in the Dark </h3>
+							
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sapiente.</p>
+
+						</div>
+					</li>
+
+
+					<li class="4">
+						<div class="slider_txt">
+							<h3>Movement in Silence.<br>Movement in the Dark </h3>
+							
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sapiente.</p>
+
+						</div>
+					</li>
 				</ul>
+					<div class="prevBtn"><a href="#">
+			<!-- src="javascript:void(0) 앵커태그 방지 -->
+			<img src="images/btn_prev.png" alt=""></a></div>
+
+		<div class="nextBtn"><a href="#"><img src="images/btn_next.png" alt=""></a></div>
+
+
+
+
+
+
+				
 			</div>
+
 			<div class="content">
 				<ul class="clearfix">
 					<li class="content1st">
