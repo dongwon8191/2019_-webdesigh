@@ -7,28 +7,41 @@
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			var myslider = $(".slider").bxSlider({
-				_auto:true
+			var myslider = $(".slider").bxSlider();
+			var myslider = $(".slider3").bxSlider({
+				auto:true,pager:false,controls:false
 
 			});
+			var slider2Btn = $(".slider2").bxSlider({
+				auto:true,pager:false,controls:false});
+
+
+
+			
+
+			$(".btn .prev").click(function(){
+				slider2Btn.goToPrevSlide();
+
+			});$(".btn .next").click(function(){
+				slider2Btn.goToNextSlide();
+
+			});
+				
+
+			});
+
+
+		new WOW().init();
 		
 
-		$('.prevBtn').click(function(){
-				myslider.goToPrevSlide();
-				return false;
-
-			});
-			$('.nextBtn').click(function(){
-				myslider.goToNextSlide();
-				return false;
-			});
 		
-});
 
 	</script>
 </head>
@@ -49,6 +62,7 @@
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Board</a></li>
 					<li><a href="#">News</a></li>
+					<li><img src="images/header-icon.png" alt=""></li>
 				</ul>
 			</nav>
 		</div>
@@ -112,47 +126,68 @@
 
 			<div class="content">
 				<ul class="clearfix">
-					<li class="content1st">
+					<li class="content1st wow fadeInUp" data-wow-delay="0.2s">
 						
 							<img src="images/logo1.png" alt="contactUs">
 							<p>Contact us</p>
 						
 					</li>
 
-					<li>
+					<li class="content2st wow fadeInUp" data-wow-delay="0.4s">
 						<img src="images/main_img_01_01.jpg" alt="">
 					</li>
 
-					<li class="content2st">
-					<div class="cardbox">
 
+					<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
+						<h2>뉴스</h2>
 
-						<h3 class="news">뉴스</h3>
-						<p class="text">	글램빈티지 새로운 쇼룸<br>
+						<ul class="slider2">
+							<li class="clearfix">
+								<div class="left">글램빈티지 새로운 쇼룸<br>
 						    부산 지점 오픈,오픈 이벤트<br>
-						    진행...</p>
-						    <img src="images/slider-icon.png" alt="">
+						    진행...</div>
+
+								<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
+							</li>
+
+								<li class="clearfix">
+								<div class="left">02Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, qui.</div>
+
+								<div class="right"><img src="images/main_img_01_01.jpg" alt=""></div>
+							</li>
+						</ul>
+
+						<div class="btn">
+							<img src="images/slider-icon01.png" alt="prev" class="prev">
+							<img src="images/slider-icon02.png" alt="next" class="next">
+							
+						</div>
+					
 
 
-					</div>
+
+
+					
 					</li>
 
 
-					<li><img src="images/main_img_01_02.jpg" alt=""></li>
 
-					<li class="content5st">
+
+					<!-- <li><img src="images/main_img_01_02.jpg" alt=""></li> -->
+
+					<li class="content5st wow fadeInUp" data-wow-delay="0.8s">
 						
 							<img src="images/logo2.png" alt="store">
 							<p>Store</p>
 						
 					</li>
 					
-					<li class="content6st">
+					<li class="content6st wow fadeInUp" data-wow-delay="1.0s">
 						<img src="images/logo3.png" alt="Histoy">
 							<p>Histoy</p>
 						
 					</li>
-					<li class="content7st">
+					<li class="content7st wow fadeInUp" data-wow-delay="1.2s">
 						<img src="images/main_img_01_03-(2).jpg" alt="">
 						<div class="card">
 							<h3>WATCH Collection</h3>
@@ -160,7 +195,7 @@
 						</div>
 					</li>
 
-					<li class="content8st">
+					<li class="content8st wow fadeInUp" data-wow-delay="1.4s">
 						<img src="images/main_img_01_04.jpg" alt="">
 
 						<div class="card">
@@ -170,7 +205,7 @@
 					</li>
 
 
-					<li class="content9st">
+					<li class="content9st wow fadeInUp" data-wow-delay="1.4s">
 
 						<img src="images/main_img_01_05.jpg" alt="">
 
@@ -180,19 +215,19 @@
 							<p class="y">Jewelry alchemy for your skin</p>
 						</div>
 						
-					</li class="content10st">
+					</li class="content10st wow fadeInUp" data-wow-delay="1.6s">
 
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="1.8s">
 						<img src="images/main_img_01_06 (2).jpg" alt="">
 					</li>
 
-					<li class="content11st">
+					<li class="content11st wow fadeInUp" data-wow-delay="2.0s">
 
 						<img src="images/logo4.png" alt="News">
 							<p>News</p>
 					</li>
 
-					<li class="content12st">
+					<li class="content12st wow fadeInUp" data-wow-delay="2.2s">
 
 						<img src="images/main_img_01_07.jpg" alt="">
 
@@ -206,6 +241,188 @@
 			</div>
 		
 	</header>
+
+
+	<div class="container">
+		<div class="section">
+			<h4>비전</h4>
+			<p>VISION 2020</p>
+
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="images/content-logo1.png" alt="product">
+					
+					<div class="card_body">
+						<h3>Product</h3>
+						<p>글램 빈티지는 레트로한 색감과<br>
+                        볼드한 형태의 디자인으로<br>
+                        1950년대 빈티지룩,글램룩을 배경으로<br>
+                        하나의 프로세스를 만들어 나갑니다.</p>
+					</div>
+
+					</div>
+				</li>
+
+				<li>
+					<div class="card">
+						<img src="images/content-logo2.png" alt="Quality">
+					
+					<div class="card_body">
+						<h3>Quality</h3>
+						<p>좋은제품을 좋은가격에<br>
+                      잘 만드는 것 으로 
+                       그치는게 아닌,<br>
+                         ‘왜 좋은가?’라는 
+                       이념을 가지고,<br>
+                       만들어지는
+                        과정,<br>
+                        소재의 구성등을
+                         다양하게 전달합니다.</p>
+					</div>
+
+					</div>
+				</li>
+
+				<li>
+					<div class="card">
+						<img src="images/content-logo3.png" alt="Slogant">
+					
+					<div class="card_body">
+						<h3>Slogan</h3>
+						
+						<p>‘최상의 것’ ‘진짜의 것’을 만든다는<br>
+
+                          슬로건을 바탕으로 브랜드를 전개합니다.</p>
+					</div>
+
+					</div>
+				</li>
+
+				<li>
+					<div class="card">
+						<img src="images/content-logo4.png" alt="product">
+					
+					<div class="card_body">
+						<h3>Design</h3>
+						<p>글램 빈티지는 레트로한 색감과<br>
+
+                          볼드한 형태의 디자인으로 <br>
+
+                         1950년대 빈티지룩 ,글램룩을 배경으로 <br>
+                                                       
+                        하나의 프로세스를 만들어 나갑니다. </p>
+					</div>
+
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="content_box">
+		<ul class="clearfix">
+
+
+			<li class="contentbox1st">
+
+
+
+				<ul class="slider3">
+					<li>
+						<img src="images/contentbox-logo01.png" alt="">
+						<div class="card">
+
+							<h1>SNS</h1>
+							<p class="text01">글램 빈티지는 옛것의 <br> 아름다움을 간직한 
+							빈티스러운 <br>멋스러움과
+							유니크한 디자인이 더해진<br> 브랜드입니다 
+							빈티지한 컬렉션부터 <br>감성적인 디자인까지  
+							폭넓은<br>디자인으로 사랑 받고있으며<br>
+							로맨틱 빈티지 스타일의<br>
+							커스텀 주얼리를 선보입니다.
+							</p>
+						
+							<p class="date">2020.8.5</p>
+						
+							<div class="btn2">
+						
+								<img src="images/slider2-icon01.png" alt="prev" class="prev">
+									<img src="images/slider2-icon02.png" alt="next" class="next">
+									
+								
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				
+			</li>
+
+			<li class="contentbox2st">
+
+				<img src="images/contentbox-img02.jpg" alt="">
+
+
+
+				
+			</li>
+
+			<li class="contentbox3st">
+				<img src="images/contentbox-img03.jpg" alt="">
+
+				</li>
+
+
+
+				
+			
+
+			<li class="contentbox4st">
+				<img src="images/contentbox-img04.jpg" alt="">
+
+
+				
+			</li>
+
+			<li class="contentbox5st">
+				<img src="images/contentbox-img05.jpg" alt="">
+
+		
+
+
+
+				
+			</li>
+
+			<li class="contentbox6st">
+
+				<img src="images/contentbox-img06.jpg" alt="">
+
+			
+
+
+				
+			</li>
+
+			<li class="contentbox7st">
+
+				<img src="images/contentbox-img07.jpg" alt="">
+
+
+
+
+
+				
+			</li>
+
+
+
+		
+		</ul>
+	</div>
 	
 </body>
 </html>

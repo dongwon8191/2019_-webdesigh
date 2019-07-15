@@ -86,6 +86,32 @@ background-color:#fff; margin: 20px auto;}
     -webkit-border-radius: px;
     border-radius: 10px;
 }
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 40%;
+    margin-top: -5px;
+    outline: 0;
+    width: 100px;
+    height: 100px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../images/btn_prev.png) no-repeat 0 0px;
+}
+
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../images/btn_next.png) no-repeat 0 0px;
+}
+
+
+
+
+
 /*header content*/
 
 
@@ -93,7 +119,7 @@ background-color:#fff; margin: 20px auto;}
 	/*width: 1260px; h315*4*/
 	width: 1260px; height: 1260px;
     position: absolute; bottom: 0; left: 50%; margin-left:-630px;
-    background-color:#fff;}
+    _background-color:#fff;}
 
     #main_header .content li{
     	float: left; 
@@ -106,6 +132,29 @@ background-color:#fff; margin: 20px auto;}
     text-align: center;
     color:white;
     font-weight:bold;}
+
+
+    .content li.content3st{width: 50% !important; /*padding-top: 10px; padding-left:10px;*/
+    	position: relative; background-color:#fff; }
+    .content li.content3st>h2{width: 200px; position: absolute; top: 30px; left: 30px; }
+    .content li.content3st .slider2 li{width: 630px!important;}
+    .content li.content3st .slider2{position: absolute; top: 0; left: 0; width: 630px;}
+    .content li.content3st .slider2 div{float: left; width: 315px; height: 315px;}
+    .content li.content3st .slider2 div.left{padding-left: 33px; padding-top: 75px; font-weight:bold;}
+     .content li.content3st .slider2 div.left:after{
+     	content:""; border-width:20px; border-style:solid;
+     	border-color:transparent transparent transparent #fff;
+     	position: absolute; left: 315px; top: 120px;
+     }
+
+
+.content li.content3st .bx-wrapper{
+	position: absolute; top: 0; left: 0; width: 630px;
+}
+
+    .content li.content3st .btn{position: absolute; left: 200px; bottom: 30px; cursor:pointer; }
+    .content li.content3st .btn img{float: left;width: 38px; display: block; }
+
 
      #main_header .content li.content5st{background-image:url(../images/main_img_back_02.jpg);
     padding-top:80px; 
@@ -194,10 +243,86 @@ li.content2st>.cardbox>p.text{font-size:0.9em;  font-weight:bold; padding-top:20
 li.content2st>.cardbox>img{display: block; padding-top:90px;padding-left:180px; }
 
 
-.bx-wrapper .bx-prev {
-    left: 10px;
-    background: url(../images/btn_next.png) no-repeat 0 -32px;
+
+
+
+
+
+
+
+
+.container{height: 730px; margin-top:100px; margin-bottom:50px;
+background:url(../images/contentsbg02.jpg) no-repeat center fixed;
+background-size:cover;}
+
+
+.container .section{width: 1260px; margin:0 auto; padding-top:30px; }
+
+.section > h4{text-align: center; color:white;}
+.section > h4:after{content:""; display: block; width: 50px; height: 3px;
+background-color:#fff; margin:30px auto;}
+.section > p{text-align: center; color:white; font-size:2em; margin-bottom:70px;}
+
+.section ul{}
+.section ul li{float: left; margin-right:20px;}
+.section ul li:last-child{margin-right:0;}
+
+.section .card{width: 300px; height: 380px; _background-color:yellow;
+	position: relative; transition:0.3s;}
+
+	.section .card:hover{transform:translate(-10px,-10px);}
+
+
+.section .card img{position: absolute; left: 50%; transform:translateX(-50%); 
+top:70px;}
+.section .card_body{width: 300px; height: 165px; position: absolute; bottom: 10px;
+text-align: center; color:white; padding:0 15px;}
+.section .card_body h3{margin-bottom:10px;}
+.section .card_body p{font-size:0.8em; }
+
+
+
+/*content box*/
+
+
+.content_box{width: 1260px; height: 630px; background-color: yellow; position: absolute;
+left:50%; margin-left:-650px;margin-bottom:100px;}
+
+.content_box li{_border: 1px solid #000; width: 25%; height: 315px; float: left;}
+
+.content_box li:first-child{height: 630px  !important; background-color:#3d6e7f;}
+
+
+.content_box li.contentbox1st{position: relative;}
+ul.slider3>li>img{display: block; position: absolute; top: 80px; left: 40%;}
+.content_box li.contentbox1st .card{height: 400px; }
+.content_box li.contentbox1st .card>h1{color:white;  text-align: center; position: absolute;
+top: 220px; left: 130px;}
+p.text01{height: 200px;color:white; font-size:0.9em;
+ text-align: center;position: absolute; bottom: 100px; left: 40px;
+ }
+
+ul.slider3>li>.card>p.date{position: absolute; bottom: -80px; 
+ 	left:135px;}
+
+ 	.content_box li.contentbox1st .card>.btn2{position: absolute; bottom: 20px; right: 20px;}
+
+ 	 .content_box li.contentbox1st .card>.btn2>img{width:38px; display: block;float: left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
