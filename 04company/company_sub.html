@@ -14,47 +14,128 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
 	<link rel="stylesheet" href="css/style2.css">
+	<script>
+		$(document).ready(function(){
+
+			$("#header_top2").hide();
+
+			$("#header_top2").eq(0).fadeIn();
+
+			$(".tab_menu > ul > li ").click(function(){
+				var liNum = $(this).index();
+				console.log(liNum);
+
+				$(".tab_menu > ul > li").removeClass();
+				$(this).addClass("active");
+
+				$(".main_header>div ").hide();
+				$(".main_header>div").eq(liNum).fadeIn();
+
+
+			});
+		});
+	</script>
 </head>
+
+
 <body>
 
 
-	<div class="main_header">
-		<div id="header_top" class="clearfix">
-			<div class="logobox">
-				<img src="images/brand-logo.png" alt="">
+	<div class="wrapper">
+
+		<div class="main_header">
+
+			<div id="header_top" class="clearfix">
+				<div class="logobox">
+					<img src="images/brand-logo.png" alt="">
+				</div>
+		
+				
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li><a href="#">브랜드소개</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">제품/기술</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Board</a></li>
+						<li><a href="#">News</a></li>
+						<li><img src="images/header-icon1.png" alt=""></li>
+					</ul>
+				</nav>
+			
+		
+			<div class="textbox">
+				<h1>Brand story</h1>
+				<p>Beautiful Moment</p>
 			</div>
 
+
+
+			</div>
+
+		
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
 			
-			<nav id="main_menu">
+
+
+
+			
+
+
+
+			
+
+
+
+
+
+
+			
+
+
+
+		
+			<div class="tab_menu">
 				<ul class="clearfix">
-					<li><a href="#">브랜드소개</a></li>
-					<li><a href="#">Product</a></li>
-					<li><a href="#">제품/기술</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Board</a></li>
-					<li><a href="#">News</a></li>
-					<li><img src="images/header-icon1.png" alt=""></li>
+					<li class="active" >BRAND STORY</li>
+					<li  >HISTORY</li>
+					<li>SLOGAN</li>
+					<li>MADE</li>
 				</ul>
-			</nav>
+		
+				<div class="content">
+					
+					<div class="menu_list">
+
+						<ul class="clearfix">
+							<li> <img src="images/list_icon01.png" alt=""> </li>
+							<li>></li>
+							<li class="black">  브랜드소개 </li>
+							<li>  < </li>
+							<li >BrandStory</li>
+						</ul>
+						
+					</div>
+				</div>
+		
+		
+			</div>
 		</div>
-
-		<div class="textbox">
-			<h1>브랜드소개</h1>
-			<p>Beautiful Moment</p>
-		</div>
-
-		<div class="tab_menu">
-			<ul class="clearfix">
-				<li><a href="">HISTORY</a></li>
-				<li><a href="">BRAND STORY</a></li>
-				<li><a href="">SLOGAN</a></li>
-				<li><a href="">MADE</a></li>
-			</ul>
-
-
-		</div>
-	</div>
-			
+				
 	
 </body>
 </html>
