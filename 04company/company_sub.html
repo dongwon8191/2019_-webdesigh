@@ -17,9 +17,13 @@
 	<script>
 		$(document).ready(function(){
 
-			$("#header_top2").hide();
+			$(".main_header > #header_top ").hide();
 
-			$("#header_top2").eq(0).fadeIn();
+			$(".main_header > #header_top ").eq(0).fadeIn();
+
+
+		
+
 
 			$(".tab_menu > ul > li ").click(function(){
 				var liNum = $(this).index();
@@ -28,8 +32,32 @@
 				$(".tab_menu > ul > li").removeClass();
 				$(this).addClass("active");
 
-				$(".main_header>div ").hide();
-				$(".main_header>div").eq(liNum).fadeIn();
+				$(".main_header > #header_top ").hide();
+				$(".main_header > #header_top").eq(liNum).fadeIn();
+
+
+			});
+
+
+
+
+			$(".content > div ").hide();
+
+			$(".content > div ").eq(0).fadeIn();
+
+
+		
+
+
+			$(".tab_menu > ul > li ").click(function(){
+				var liNum = $(this).index();
+				console.log(liNum);
+
+				$(".tab_menu > ul > li").removeClass();
+				$(this).addClass("active");
+
+				$(".content > div ").hide();
+				$(".content > div").eq(liNum).fadeIn();
 
 
 			});
@@ -70,8 +98,142 @@
 			</div>
 
 
+			
+
+
+
+
+
+
+
+
+
+
 
 			</div>
+
+
+				<div id="header_top" class="clearfix">
+				<div class="logobox">
+					<img src="images/brand-logo.png" alt="">
+				</div>
+		
+				
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li><a href="#">브랜드소개</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">제품/기술</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Board</a></li>
+						<li><a href="#">News</a></li>
+						<li><img src="images/header-icon1.png" alt=""></li>
+					</ul>
+				</nav>
+			
+		
+			<div class="textbox">
+				<h1>HISTORY</h1>
+				<p>Beautiful Moment</p>
+			</div>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+				<div id="header_top" class="clearfix">
+				<div class="logobox">
+					<img src="images/brand-logo.png" alt="">
+				</div>
+		
+				
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li><a href="#">브랜드소개</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">제품/기술</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Board</a></li>
+						<li><a href="#">News</a></li>
+						<li><img src="images/header-icon1.png" alt=""></li>
+					</ul>
+				</nav>
+			
+		
+			<div class="textbox">
+				<h1>Slogan</h1>
+				<p>Beautiful Moment</p>
+			</div>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+				<div id="header_top" class="clearfix">
+				<div class="logobox">
+					<img src="images/brand-logo.png" alt="">
+				</div>
+		
+				
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li><a href="#">브랜드소개</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">제품/기술</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Board</a></li>
+						<li><a href="#">News</a></li>
+						<li><img src="images/header-icon1.png" alt=""></li>
+					</ul>
+				</nav>
+			
+		
+			<div class="textbox">
+				<h1>  MADE</h1>
+				<p>Beautiful Moment</p>
+			</div>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+		
 
 		
 
@@ -129,13 +291,185 @@
 							<li >BrandStory</li>
 						</ul>
 						
-					</div>
-				</div>
+					
+
+
+					<div class="main_content01">
+						<h3>Brand Story</h3>
+						<p class="about">글램빈티지는 빈티지하고 클래식한 브랜드 이미지를 선보입니다</p>
+
+						<div class="text_box">
+							<img src="images/content01_img.png" alt="left" class="left">
+							<img src="images/content02_img.png" alt="left" class="right">
+							<h1 class="one">Beautiful Moment</h1>
+							<h1 class="two">in your life</h1>
+						</div>
+
+						<p class="txt">2012년 9월부터 시작된 유니크한 디자인과 특유의 오리엔탈 컬러감을 앞세운 주얼리 브랜드로써,<br>
+
+                        로맨틱 빈티지 스타일에 주로 영감을 받아 주얼리 그이상의 가치를 위해 늘 고민합니다. </p>
+
+						
+                    </div>
+
+					
+
+				
+
+				<div class="main_content02">
+
+					<ul class="clearfix">
+						<li class="card">
+							<img src="images/content02_img01.png" alt="">
+							<div class="card_body">
+								<h2>피부에 바르는 주얼리</h2>
+								<p>우리는 피부를 빛나게 도와주는 <br>
+						
+						                             무엇인가가 필요합니다. <br>
+						
+						                             고대의 연금술사가 여성이 젊음과<br>
+						                
+						                                 섹시함을 되찾도록 마법의 약을 <br>
+						
+						                                 조제하듯 페르테는 개개인의 피부에 맞는<br>
+						 
+						                        색감과 세공을 하여 주얼리를 만듭니다.<br>
+						
+						                     개인의 개성을 살리고자 하는 의미에서 마치 중세 연금술사가
+						 
+						                      마법의 약병에<br> 주얼리를 담아 치료해준다는<br>
+						
+						                         의미를 부여해 패키징을 완성했습니다.</p>
+						</div>
+						
+										</li>
+
+
+										<li class="card">
+							<img src="images/content02_img02.png" alt="">
+							<div class="card_body">
+								<h2>고객 맞춤 커스텀디자인</h2>
+								<p>
+									
+글램빈티지는 고객들이 원하는<br>
+
+ 제품의 소재 색 디자인의 요소를 컨설팅하여
+
+맞춤제작하는 커스텀디자인을 진행하고있습니다
+
+다양한 선택요소들로  디자인이 한정적이지 않고
+ 
+다양하게 만들 수 있도록 구성되어있습니다.
+
+또한 제작하는 방식을 보다 쉽게 구성하여<br>
+
+직접 조합해보고 완성된 제품을 가상으로
+ 
+확인해 볼 수 있는 시스템을 도입하였습니다.
+								</p>
+						</div>
+						
+										</li>
+
+
+											<li class="card">
+							<img src="images/content02_img03.png" alt="">
+							<div class="card_body">
+								<h2>환경을 생각하는 브랜드</h2>
+
+								<p>
+									
+오늘날 국내외적으로 친환경 제품과 안전한
+
+제품에 대한 관심이 높아지고 있습니다
+
+글램빈티지는 이와 같은 요구에 부응하기 위하여
+
+다양한 친환경 기능성 제품을 공급하고있습니다
+
+모든 제품별로 상세페이지 하단에
+
+사용한 소재를 표기하고있으며
+
+주얼리의 소재에대해 정확히 알 수 있도록
+
+기재해두었습니다.
+
+
+								</p>
+						</div>
+						
+										</li>
+
+
+
+
+
+
+					</ul>
+
+
+
+		</div>
 		
-		
+			
+
+
+			<div class="main_content03">
+
+				<h2>유니크한 디자인과 높은 퀄리티로 제작합니다.</h2>
+				<p>좋은제품을 좋은가격에 잘 만드는 것으로 그치는게 아닌, '왜 좋은가?'라는 이념을 가지고,<br>
+				만들어지는 과정,소재의 구성등을 다양하게 전달합니다.</p>
+
+				<ul class="contentbox clearfix">
+					<li >
+						<img src="images/content03_contentbox_img01.jpg" alt="">
+					</li>
+					<li class="box2st">
+						<h2>글로벌 브랜드 구축 </h2>
+						<p> 국내뿐 아니라 일본 중국 동아시아를<br>
+ 비롯해
+ 다양한 각국에 <br>
+다양한 컬렉션들을 선보이고있습니다<br>
+2017년부터 면세점과 각국의 백화점의<br>
+ 
+입점하여 다양한 나라에서<br> 만나볼 수 있습니다</p>
+					</li>
+					<li><img src="images/content03_contentbox_img02.jpg" alt=""></li>
+					<li>			<h2>특별한 쇼룸 </h2>
+						<p>글램빈티지는  각 쇼룸에 특별한 전시와
+ 
+이벤트를 만나보실 수 있습니다
+
+각 지점마다 다른 테마를 가지고있으며 
+
+제품을 직접 착용해보고 
+만져보실 수 있도록 자유롭게 구성되어 있습니다</p></li>
+					<li>							<h2>특별한 쇼룸 </h2>
+						<p>글램빈티지는  각 쇼룸에 특별한 전시와
+ 
+이벤트를 만나보실 수 있습니다
+
+각 지점마다 다른 테마를 가지고있으며 
+
+제품을 직접 착용해보고 
+만져보실 수 있도록 자유롭게 구성되어 있습니다</p></li>
+					<li><img src="images/content03_contentbox_img03.jpg" alt=""></li>
+					<li>							<h2>특별한 쇼룸 </h2>
+						<p>글램빈티지는  각 쇼룸에 특별한 전시와
+ 
+이벤트를 만나보실 수 있습니다
+
+각 지점마다 다른 테마를 가지고있으며 
+
+제품을 직접 착용해보고 
+만져보실 수 있도록 자유롭게 구성되어 있습니다</p>></li>
+					<li><img src="images/content03_contentbox_img04.jpg" alt=""></li>
+				</ul>
+				
 			</div>
 		</div>
-				
-	
+				</div>
+	</div>
 </body>
 </html>
