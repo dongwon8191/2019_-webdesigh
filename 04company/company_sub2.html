@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>sub</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<link rel="stylesheet" href="css/style3.css">
+	<script>
+		$(document).ready(function(){
+
+			$(".main_header > #header_top ").hide();
+
+			$(".main_header > #header_top ").eq(0).fadeIn();
+
+
+		
+
+
+			$(".tab_menu > ul > li ").click(function(){
+				var liNum = $(this).index();
+				console.log(liNum);
+
+				$(".tab_menu > ul > li").removeClass();
+				$(this).addClass("active");
+
+				$(".main_header > #header_top ").hide();
+				$(".main_header > #header_top").eq(liNum).fadeIn();
+
+
+			});
+
+
+
+
+			$(".content > div ").hide();
+
+			$(".content > div ").eq(0).fadeIn();
+
+
+		
+
+
+			$(".tab_menu > ul > li ").click(function(){
+				var liNum = $(this).index();
+				console.log(liNum);
+
+				$(".tab_menu > ul > li").removeClass();
+				$(this).addClass("active");
+
+				$(".content > div ").hide();
+				$(".content > div").eq(liNum).fadeIn();
+
+
+			});
+		});
+
+		new WOW().init();
+	</script>
+</head>
+
+
+<body>
+
+
+	<div class="wrapper">
+
+		<div class="main_header">
+
+			<div id="header_top" class="clearfix">
+				<div class="logobox">
+					<img src="images/brand-logo.png" alt="">
+				</div>
+		
+				
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li ><a href="#">브랜드소개</a></li>
+						<li class="on"><a href="#">News</a></li>
+						<li><a href="#">제품/기술</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Board</a></li>
+						<li><a href="#">News</a></li>
+						<li><img src="images/header-icon1.png" alt=""></li>
+					</ul>
+				</nav>
+			
+		
+			<div class="textbox">
+				<h1>#News</h1>
+				
+			</div>
+
+		</div>
+	</div>
+<div class="content">	
+
+	<div class="content_box">
+<div class="box1st">
+<img src="images/news_img1.jpg" alt="">
+<button class="more">ddd</button>
+
+<div class="txt">	glam vintage with 청하</div>
+
+
+	
+</div>
+
+
+
+	</div>
+
+</div>
+
+	<div>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+				
+</body>
+</html>
