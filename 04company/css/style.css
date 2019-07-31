@@ -13,6 +13,9 @@ body{font-family: 'Nanum Gothic', sans-serif;}
   .slider_wrap h3{font-size:2em;}
   .slider_wrap p{font-size:0.7em;}
   #main_header .content li{height:250px;}
+  .card_content>ul>li{width: 25%;height:100px !important;
+    _border: 1px solid #000;}
+    .card_content>ul{height: 100px!important;}
 }
 
 

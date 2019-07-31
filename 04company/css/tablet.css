@@ -370,6 +370,7 @@ position: absolute; left: 145px;  top: 135px; background-color:rgba(0,0,0,0);}
 
   .card_content{width: 100%; }
   .card_content>ul>li{width: 25%;height:200px !important;  _border: 1px solid #000;}
+  .card_content>ul{width: 100%; }
 
   .card_content>ul>li.one01{width: 25%;}
   .card_content>ul>li.one02{}
