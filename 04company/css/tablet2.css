@@ -94,18 +94,18 @@
 .content li.content5st,
 .content li.content6st,
 .content li.content8st,
-.content li.content9st,
+
 .content li.content10st,
 .content li.content11st,
-.content li.content12st
+
 {display: none;}
                       /*25% 빼도됨*/
 .content li.content7st{width: 100% !important;
  color:white; overflow:hidden; position: relative;  }
 .content li.content7st img{width: 100%; position: absolute; top: 50%;
 transform:translateY(-50%); }   /*사이즈 줄여도 이미지 정가운데 위치함*/
-
-
+.content li.content12st{width: 100%;}
+.content li.content9st{width: 100%;}
 /*.content li.content3st img{width: 100%; position: absolute; top: 50%;
 transform:translateY(-50%); }*/
 
