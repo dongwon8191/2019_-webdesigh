@@ -3,7 +3,9 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>COMPANY</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/colorbox.css">
@@ -19,7 +21,7 @@
 			var myslider = $(".slider").bxSlider();
 			
 			var slider2Btn = $(".slider2").bxSlider({
-				auto:true,pager:false,controls:false});
+				pager:false,controls:false});
 
 			var slider3Btn = $(".slider3").bxSlider({
 				auto:true,pager:false,controls:false});
@@ -47,7 +49,17 @@
 
 			$(".youtube").colorbox({iframe:true, innerWidth:600,innerHeight:338});
 
-				
+				$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					$(".menuView").stop().animate({top:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".menuView").stop().animate({top:"-100%"},300)
+				}
+			});
 
 			});
 
@@ -66,8 +78,14 @@
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
 			<div class="logobox">
-				<img src="images/brand-logo.png" alt="">
+				<img src="images/brand-logo.png" alt="" class="pc">
+				<img src="images/footer_logo.png" alt="" class="tablet">
 			</div>
+			<div class="toggleMenu">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
 
 			
 			<nav id="main_menu">
@@ -96,10 +114,10 @@
 
 					<li class="second">
 						<div class="slider_txt">
-							<h3>Glam vintage new collection </h3>
+							<h3>New collection </h3>
 							
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sapiente.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
 						</div>
 					</li>
@@ -130,7 +148,11 @@
 			<!-- src="javascript:void(0) 앵커태그 방지 -->
 			<img src="images/btn_prev.png" alt=""></a></div>
 
-		<div class="nextBtn"><a href="#"><img src="images/btn_next.png" alt=""></a></div>
+		<div class="nextBtn">
+			<a href="#">
+				<img src="images/btn_next.png" alt="" class="pc_btn"> 
+			<!-- <img src="images/btn_next2.png" alt="" class="tablet_btn"> -->
+		</a></div>
 
 
 
@@ -156,19 +178,19 @@
 
 
 					<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
-						<h2>뉴스</h2>
+						<h2>News</h2>
 
 						<ul class="slider2">
 							<li class="clearfix">
-								<div class="left">글램빈티지 새로운 쇼룸<br>
-						    부산 지점 오픈,오픈 이벤트<br>
-						    진행...</div>
+								<div class="left">글램빈티지 새로운 쇼룸
+						    부산 지점 오픈,<br>오픈 이벤트
+						    진행 Lorem ipsum dolor sit<br> amet, consectetur adipisicing elit. Perspiciatis, harum.</div>
 
 								<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
 							</li>
 
 								<li class="clearfix">
-								<div class="left">배우 신혜선 글램빈티지<br>
+								<div class="left">배우 신혜선 글램빈티지
 								black 라인 귀걸이 착용!</div>
 
 								<div class="right"><img src="images/main_img_01_03.jpg" alt=""></div>
@@ -209,7 +231,7 @@
 						<img src="images/main_img_01_03-(2).jpg" alt="">
 						<div class="card">
 							<h3>WATCH Collection</h3>
-							<p>클래식하고<br>여성스러운 디자인의 <br> 시계컬렉션을 만나보세요</p>
+							<p>클래식하고 여성스러운 디자인의 <br> 시계 컬렉션을 만나보세요</p>
 						</div>
 					</li>
 
@@ -232,22 +254,26 @@
 							<p class="x">피부에 바르는 주얼리</p>
 							<p class="y">Jewelry alchemy for your skin</p>
 						</div>
+					</li>
 						
-					</li class="content10st wow fadeInUp" data-wow-delay="1.6s">
+					<li class="content10st wow fadeInUp" data-wow-delay="1.6s">
 
-					<li class="wow fadeInUp" data-wow-delay="1.8s">
+					
 						<img src="images/main_img_01_06 (2).jpg" alt="">
 					</li>
 
 					<li class="content11st wow fadeInUp" data-wow-delay="2.0s">
 
 						<img src="images/logo4.png" alt="News">
+
 							<p>News</p>
 					</li>
 
 					<li class="content12st wow fadeInUp" data-wow-delay="2.2s">
 
-						<img src="images/main_img_01_07.jpg" alt="">
+						<img src="images/main_img_01_07.jpg" alt="" class="pc_brand">
+						<img src="images/mainl25.jpg" alt="" class="tablet_brand">
+
 
 						<div class="card">
 							<h3 class="x2">Brand Story</h3>
@@ -256,8 +282,17 @@
 					</li>
 					
 				</ul>
+			
+
+			<div class="card_content">
+				<ul>
+					<li class="one01"></li>
+					<li class="one02"></li>
+					<li class="one03"></li>
+					<li class="one04"></li>
+				</ul>
 			</div>
-		
+		</div>
 	</header>
 
 
