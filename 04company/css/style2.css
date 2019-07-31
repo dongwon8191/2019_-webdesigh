@@ -19,30 +19,7 @@ background-size:cover;}
 
 
 
- .main_header .textbox2{ color:white; position: absolute;
- bottom: 0; left: 550px; text-align: center;}
- .main_header .textbox2>h1{text-align: center;
- font-weight:bold; font-size:3.5em; color:white;  }
-.main_header .textbox2>p{text-align: center;
- _padding-top:10px;}
-
- .main_header .textbox3{ color:white; position: absolute;
- bottom: 0; left: 480px; text-align: center;}
- .main_header .textbox3>h1{text-align: center;
- font-weight:bold; font-size:3.5em; color:white;  }
-.main_header .textbox3>p{text-align: center;
- _padding-top:10px;}
-
-
-
-  .main_header .textbox4{ color:white; position: absolute;
- bottom: 0; left: 480px; text-align: center;}
- .main_header .textbox4>h1{text-align: center;
- font-weight:bold; font-size:3.5em; color:white;  }
-.main_header .textbox4>p{text-align: center;
- _padding-top:10px;}
-
-
+ 
 
 
 
@@ -73,22 +50,7 @@ z-index:1;}
 
 
 
-  #header_top2{width: 1260px; 
- height: 225px;
-  _background-color:pink; 
-  position: absolute; top: 40px; left: 50%; margin-left:-630px;
-z-index:1;}
-
-  #header_top2 > .logobox{float: left; _background-color:blue;}
-  #header_top2 > #main_menu{float:right; _background-color:red;padding-top:15px;}
-
-  #header_top2>#main_menu>ul{}
-  #header_top2>nav#main_menu>ul>li{float: left;}
-  #header_top2>nav#main_menu>ul>li>a{display: block; line-height: 50px; padding:0 30px; color:white;
-  font-weight:bold; }
-
-  #header_top>nav#main_menu>ul>li>a:hover{color:#ffa130;}
-
+  
 
 
 
