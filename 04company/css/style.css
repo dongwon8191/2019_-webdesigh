@@ -8,7 +8,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 
 @media all and (max-width:630px){
-  #main_header{height: 850px;}
+  #main_header{height: 1400px;}
   .slider_wrap ul li{height: 300px;}
   .slider_wrap h3{font-size:2em;}
   .slider_wrap p{font-size:0.7em;}
@@ -16,7 +16,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 }
 
 
-@media all and (max-width:520px){
+/*@media all and (max-width:520px){
   #main_header{height: 750px;}
   .slider_wrap ul li{height: 300px;}
   .slider_wrap h3{font-size:2em;}
@@ -26,7 +26,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
   .content .card p{font-size:1em;}
 }
 
-
+*/
 
 
 
