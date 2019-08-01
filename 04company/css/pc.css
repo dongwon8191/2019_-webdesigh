@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 
- @media all and (min-width:961px){
-
+ 
 
 body{min-width:1260px; }
 #main_header{
