@@ -259,18 +259,6 @@ transform:translateY(-50%); }*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .content .card{position: absolute;top:40px;left:40px;}
 .content .card h3:after{
   content:"";display: block;width: 30px;height: 3px;background-color: #fff;
@@ -286,7 +274,8 @@ transform:translateY(-50%); }*/
 .content_wrapper{width: 100%;}
 .content01{width: 100%;}
 .content01 li{float: left; height: 200px;}
-.content01 li.content02_1st{width: 50%; background-image:url(../images/content02_img01.jpg);}
+.content01 li.content02_1st{width: 50%;
+ background-image:url(../images/content02_img01.jpg);}
 
 
 

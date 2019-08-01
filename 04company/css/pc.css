@@ -173,11 +173,12 @@ background-color:#fff; margin: 20px auto;}
 
     .content li.content3st{width: 50% !important; /*padding-top: 10px; padding-left:10px;*/
       position: relative; background-color:#fff; }
-    .content li.content3st>h2{width: 200px; position: absolute; top: 30px; left: 30px; }
+    .content li.content3st>h2{width: 200px; position: absolute; top: 30px; left: 5px; }
     .content li.content3st .slider2 li{width: 630px!important;}
     .content li.content3st .slider2{position: absolute; top: 0; left: 0; width: 630px;}
     .content li.content3st .slider2 div{float: left; width: 315px; height: 315px;}
-    .content li.content3st .slider2 div.left{padding-left: 33px; padding-top: 75px; font-weight:bold;}
+    .content li.content3st .slider2 div.left{padding-left: 5px; padding-top: 75px; 
+    }
      .content li.content3st .slider2 div.left:after{
       content:""; border-width:20px; border-style:solid;
       border-color:transparent transparent transparent #fff;

@@ -20,7 +20,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
   
    
-.content li.content3st h2{ padding-top:30px;font-size:1em;}
+.content li.content3st h2{ padding-top:10px;font-size:1em;}
 
 .content li.content3st .slider2 li .left{
   width: 50% !important;
@@ -47,15 +47,18 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 
 .content li.content3st .left{
-  font-size:0.7em; padding-top:180px;}
+  font-size:0.7em; padding-top:-10px;}
 
 
 .content li.content3st .btn{position: absolute;left:30px;bottom:10px;cursor:pointer;}
 .content li.content3st .btn img{float: left;width:20px;border: 1px solid #cdcdcd;display: block;}
 .content li.content3st .btn img:first-child{border-right:1px solid #fff}
 
+
+/*tablet content*/
+
 .tablet_content{ width: 100%; 
- background-color:pink; height: 150px!important; }
+ /*background-color:pink;*/ height: 150px!important; }
 .tablet_content .card{position: absolute; top: 35px;right:100px;
  }
 .tablet_content img.tablet_content01{width: 100%; height: 150px !important; }
@@ -64,8 +67,6 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 .tablet_content .card p{font-size:0.7em !important;   color:white; font-weight:bold; text-align: center; }
 .tablet_content .card h3{font-size:1.2em !important;  position: relative; color:white; text-align: center;  }
- 
-
 
  .tablet_content .card h3:after{content:""; display: block; 
  width: 50px; height: 2px; background-color:white;
@@ -73,37 +74,123 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
  .card_content{width: 100%;  }
 
- .card_content>ul>li{width: 50% !important;height:120px !important;  _border: 1px solid #000;}
- .card_content li.one01 img{width: 100%; height: 120px !important; position: relative; display: block;}
- .card_content li.one02 img{width: 100%; height: 120px !important; position: relative; display: block;}
+ .card_content>ul>li{
+  width: 50% !important;height:120px !important;
+   _border: 1px solid #000;}
 
- .card_content li.one01 img.contact{position: absolute; right: 50px; top: 40px; display: block;
+ .card_content li.one01 img{
+  width: 100%; height: 120px !important; 
+  position: relative; display: block;}
+
+ .card_content li.one02 img{width: 100%;
+  height: 120px !important;
+   position: relative; 
+   display: block;}
+
+ .card_content li.one01 img.contact{position: absolute;right:75px; top: 20px; display: block;
      width: 50px !important; height: 50px !important;}
 
-     .card_content li.one02 img.store {position: absolute; right: 50px; top: 40px; display: block;
-     width: 50px !important; height: 50px !important;}
-      .card_content li.one03 img.histoy{position: absolute; right: 50px; top: 40px; display: block;
+     .card_content li.one02 img.store {
+      position: absolute;
+      right:80px; top: 20px;
+      display: block;
+     width: 50px !important;
+      height: 50px !important;}
+
+      .card_content li.one03 img.histoy{position: absolute; right:75px; top: 20px; display: block;
      width: 50px !important; height: 45px !important;}
-      .card_content li.one04 img.news{position: absolute; right: 50px; top: 40px; display: block;
+      .card_content li.one04 img.news{position: absolute;right:75px; top: 20px; display: block;
      width: 50px !important; height: 50px !important;}
      .content01 li{float: left; height: 100px !important;}
 
-
-
-.content li.content12st .card h3{ font-size:1.0em;}
-.content li.content12st .card p.p2{ font-size:0.8em; }
+     .card_content li p{position: absolute; left: 80px; top: 70px;  font-size:1em !important;}
 
 
 
-.content_wrapper{width: 100%;}
-.content01{width: 100%;}
-.content01 li{float: left; height: 150px !important;}
-.content01 li.content02_1st{width: 100%; background-image:url(../images/content02_img01.jpg);}
-.content01 li.content02_2st{width: 100%; background-image:url(../images/content02_img02.jpg);}
+/*content12*/
 
 .content li.content12st img.tablet_brand{height:150px !important;}
 .content li.content12st img.pc_brand{display: none;}
 .content li.content12st{height: 150px !important;}
+          
+.content li.content12st .card{position: relative;left: 15px;}
+.content li.content12st .card p.p2{position: absolute; top:20px;font-size:0.8em;}
+.content li.content12st .card h3{position: absolute; top: -20px;font-size:1.0em;}
+ .content .card h3.x2:after{
+  content:""; display: block; 
+  width: 30px; height: 3px; background-color:#ffff;
+  position: absolute; top: 10px;}
+
+/*content wrapper*/
+
+.content_wrapper{width: 100%;}
+.content01{width: 100%;}
+.content01 li{float: left; height: 150px !important;}
+.content01 li.content02_1st{width: 100%;background-image:url(../images/content02_img1.jpg);}
+.content01 li.content02_2st{width: 100%;}
+
+
+.content01>ul>li.content02_1st>.card02>h1{
+  padding-left:85px; 
+  padding-top:20px; 
+  position: relative;
+font-size:1.5em;}
+
+.content01>ul>li.content02_1st>.card02>h1:after{
+    content:""; display: block; 
+    width: 50px; height: 3px;
+     background-color:#7d7d7d;
+    position: absolute; 
+    left: 110px; top:60px;
+
+}
+.content01>ul>li.content02_1st>.card02>p{
+ padding-left:85px;
+padding-top:20px;}
+
+.content01>ul>li.content02_1st>.card02>button{
+  width: 80px;height: 30px;
+  position: absolute;
+   left: 95px;
+  top: 105px;
+font-size:0.5em;}
+
+
+
+
+
+
+
+
+.content01>ul>li.content02_2st>.card03>h1{
+  text-align: center; 
+  font-size:1.5em;
+  position: relative;
+  padding-top:10px;
+
+}
+
+
+.content01>ul>li.content02_2st>.card03>h1:after{
+    
+    position: relative; 
+   left: 180px; top:10px;
+
+}
+.content01>ul>li.content02_2st>.card03>p{
+ padding-right:20px;
+padding-top:20px;
+}
+
+.content01>ul>li.content02_2st>.card03>button{
+  width: 80px;height: 30px;
+  position: absolute;
+  left: 165px;
+  top: 100px;
+  font-size:0.5em;}
+   
+
+
 
 
 
@@ -116,7 +203,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .toggleMenu .bar2{top:24px;}
 .toggleMenu .bar3{top:33px;}
 #footer_wrap .footer>div.copy a{display: block; line-height: 25px; padding: 5px 5px; font-size:0.8em;}
-#footer_wrap .footer>div.logo>img{display: block; padding-left:50px;}
+#footer_wrap .footer>div.logo>img{display: block; padding-left:150px;}
+#footer_wrap .footer>div.copy address{font-size:0.6em;}
 
 }
 
