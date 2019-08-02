@@ -51,7 +51,7 @@ z-index:1;
 }
 
 .slider_wrap li.three{
-    background:url(../images/ton_img3.jpg) no-repeat center;
+    background:url(../images/top_img3.jpg) no-repeat center;
     background-size:cover;
 }
 
@@ -61,6 +61,7 @@ z-index:1;
 }
 
 .slider_wrap li.second>.slider_txt>h3{color:black;}
+.slider_wrap li.three>.slider_txt{border: 1px solid #000; width: 500px !important;}
 .slider_wrap li.four>.slider_txt>h3:after{display: none;}
 .slider_wrap li.four>.slider_txt{position: absolute; left: 20%;}
 
