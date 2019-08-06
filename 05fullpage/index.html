@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>YUE HUA ENTERTAINMENT</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#fullpage").fullpage({
+				anchors:["1st","2st","3st","4st"],
+				menu:"#topMenu",
+				navigation:true,
+				slidesNavigation:true,
+				navigationPosition:'right',
+				navigationTooltips:["menu1","menu2","menu3","menu4"],
+				afterLoad:function(anchorslink,index){
+					console.log("anchor:"+anchorslink+", index:"+index);
+					if(index == 2){
+
+						$("#onView").addClass("move");
+
+					}else{
+						$("#onView").removeClass("move");
+					}
+
+				}
+			});
+
+			$(".scroll").click(function(){
+				$("html").animate({},300)
+			});
+
+			
+
+		     
+
+
+
+
+
+
+
+
+		});
+	</script>
+	
+</head>
+<body>
+	<div id="navTop">
+		<div class="toggle">
+			
+		</div>
+	</div>
+
+	<div id="fullpage">
+		<div class="section page" id="page1" data-anchor="1st">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+				<p>YUE HUA<br>
+				ENTERTAINMENT
+				</p>
+			</div>
+
+			<div class="main_menu">
+				<ul>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">ARTIST</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section page" id="page2" data-anchor="2st"></div>
+		<div class="section page" id="page3" data-anchor="3st"></div>
+		<div class="section page" id="page4" data-anchor="4st"></div>
+
+	</div>
+</body>
+</html>
