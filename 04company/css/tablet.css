@@ -34,7 +34,8 @@
 .toggleMenu.change .bar3{transform:rotate(45deg);top:21px;background-color:#000;}
 
 
-#main_menu{width: 100%; height: 100%; background-color:rgba(0,0,0,0.6); position: fixed; top: -100%;z-index:99999; overflow:auto;}
+#main_menu{width: 100%; height: 100%; background-color:rgba(0,0,0,0.6);
+ position: fixed; top: -100%;z-index:99999; overflow:auto;}
   .toggleMenu.change{position:fixed !important;z-index:999999 !important;right:0;}
 
 

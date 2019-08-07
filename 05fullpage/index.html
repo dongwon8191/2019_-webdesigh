@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
@@ -19,7 +19,7 @@
 				navigation:true,
 				slidesNavigation:true,
 				navigationPosition:'right',
-				navigationTooltips:["menu1","menu2","menu3","menu4"],
+				navigationTooltips:["YUEHUA","About","Artist","News"],
 				afterLoad:function(anchorslink,index){
 					console.log("anchor:"+anchorslink+", index:"+index);
 					if(index == 2){
@@ -37,6 +37,22 @@
 				$("html").animate({},300)
 			});
 
+	$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					$(".sub_menu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".sub_menu").stop().animate({left:"-100%"},300)
+				}
+			});
+
+
+		});
+
+
 			
 
 		     
@@ -48,33 +64,92 @@
 
 
 
-		});
+		
 	</script>
 	
 </head>
 <body>
 	<div id="navTop">
-		<div class="toggle">
-			
+
+		<div class="toggleMenu">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+	
+		</div>
+
+		<div class="sub_menu">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Artist</a></li>
+				<li><a href="#">Audition</a></li>
+				<li><a href="#">Notice</a></li><hr>
+			</ul>
+
 		</div>
 	</div>
 
 	<div id="fullpage">
 		<div class="section page" id="page1" data-anchor="1st">
-			<div class="logo">
-				<img src="images/logo.png" alt="">
-				<p>YUE HUA<br>
-				ENTERTAINMENT
-				</p>
+			<div class="slide" class="one">
+				<div class="sView1">
+					<div class="logo">
+						<img src="images/logo.png" alt="">
+						<p>YUE HUA<br>
+						ENTERTAINMENT
+						</p>
+					</div>
+					
+					<div id="movie_wrapper" class="clearfix">
+						<div class="movie01">
+							<img src="images/movie01.jpg" alt="" class="img">
+							<img src="images/movie_button.png" alt="" class="button">
+						</div>
+						<div class="movie02">
+							<img src="images/movie02.jpg" alt="" class="img">
+							<img src="images/movie_button.png" alt="" class="button">
+						</div>
+						<div class="movie03">
+							<img src="images/movie03.jpg" alt="img" >
+							<img src="images/movie_button.png" alt="" class="button">
+						</div>
+						
+					</div>
+					
+					<div class="main_menu">
+						<ul>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="#">ARTIST</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
 			</div>
 
-			<div class="main_menu">
-				<ul>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">ARTIST</a></li>
-					<li><a href="#">NEWS</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
+				<div class="slide" id="two">
+				<div class="sView2">
+					
+					
+					<div class="main_menu">
+						<ul>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="#">ARTIST</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+				
+
+
 			</div>
 		</div>
 		<div class="section page" id="page2" data-anchor="2st"></div>
