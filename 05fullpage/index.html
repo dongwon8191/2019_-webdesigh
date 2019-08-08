@@ -6,37 +6,45 @@
 	<title>YUE HUA ENTERTAINMENT</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
+			  $(".slider").bxSlider();
+
 			$("#fullpage").fullpage({
 				anchors:["1st","2st","3st","4st"],
 				menu:"#topMenu",
-				navigation:true,
-				slidesNavigation:true,
+				// navigation:true,
+				slide:true,
+
+				// slidesNavigation:true,
 				navigationPosition:'right',
 				navigationTooltips:["YUEHUA","About","Artist","News"],
 				afterLoad:function(anchorslink,index){
 					console.log("anchor:"+anchorslink+", index:"+index);
 					if(index == 2){
-
 						$("#onView").addClass("move");
-
 					}else{
 						$("#onView").removeClass("move");
 					}
-
-				}
+				},
+				afterRender: function () {
+                 //on page load, start the slideshow
+                  slideTimeout = setInterval(function () {
+                         $.fn.fullpage.moveSlideRight();
+                     }, 50000);
+             	}
 			});
-
 			$(".scroll").click(function(){
 				$("html").animate({},300)
 			});
-
 	$(".toggleMenu").click(function(){
 				var myClass = $(this).attr("class");
 				console.log(myClass);
@@ -50,20 +58,15 @@
 			});
 
 
+	
+
+
+
+	
 		});
 
-
 			
-
 		     
-
-
-
-
-
-
-
-
 		
 	</script>
 	
@@ -104,15 +107,19 @@
 						<div class="movie01">
 							<img src="images/movie01.jpg" alt="" class="img">
 							<img src="images/movie_button.png" alt="" class="button">
+							<div class="back"></div>
+						</div>
+						<div class="movie03">
+							<img src="images/movie03.jpg" alt="img"class="img" >
+							<img src="images/movie_button.png" alt="" class="button">
+							<div class="back"></div>
 						</div>
 						<div class="movie02">
 							<img src="images/movie02.jpg" alt="" class="img">
 							<img src="images/movie_button.png" alt="" class="button">
+							<div class="back"></div>
 						</div>
-						<div class="movie03">
-							<img src="images/movie03.jpg" alt="img" >
-							<img src="images/movie_button.png" alt="" class="button">
-						</div>
+						
 						
 					</div>
 					
@@ -134,15 +141,103 @@
 
 				<div class="slide" id="two">
 				<div class="sView2">
+
+					<div class="top"><img src="images/top01.png" alt=""></div>
 					
-					
+			
 					<div class="main_menu">
 						<ul>
+							<li><a href="#">YUEHUA</a></li>
 							<li><a href="#">ABOUT</a></li>
+
 							<li><a href="#">ARTIST</a></li>
-							<li><a href="#">NEWS</a></li>
-							<li><a href="#">CONTACT</a></li>
+							<li><a href="#">SPECIAL PROJECTS</a></li>
+							<li><a href="#">CONTACT US</a></li>
+							<li><a href="#">AUDITION</a></li>
+							
+							
 						</ul>
+					</div>
+
+					<div class="text">
+						<h3>WOODZ-DIFFERENT</h3>
+						<p >Yuehua story</p>
+					</div>
+				</div>
+
+
+				
+
+
+			</div>
+
+
+
+
+
+
+				<div class="slide" id="three">
+				<div class="sView3">
+
+					<div class="top"><img src="images/top01_g.png" alt=""></div>
+
+					<div class="main_menu">
+						<ul>
+							<li><a href="#">YUEHUA</a></li>
+							<li><a href="#">ABOUT</a></li>
+
+							<li><a href="#">ARTIST</a></li>
+							<li><a href="#">SPECIAL PROJECTS</a></li>
+							<li><a href="#">CONTACT US</a></li>
+							<li><a href="#">AUDITION</a></li>
+							
+							
+						</ul>
+					</div>
+					
+			
+
+					<div class="text">
+						<h3>우주소녀-for the summer</h3>
+						<p >Yuehua story</p>
+					</div>
+				</div>
+
+
+				
+
+
+			</div>
+
+
+
+
+
+			<div class="slide" id="four">
+				<div class="sView4">
+					<div class="top"><img src="images/top01_g.png" alt=""></div>
+
+					<div class="main_menu">
+						<ul>
+							<li><a href="#">YUEHUA</a></li>
+							<li><a href="#">ABOUT</a></li>
+
+							<li><a href="#">ARTIST</a></li>
+							<li><a href="#">SPECIAL PROJECTS</a></li>
+							<li><a href="#">CONTACT US</a></li>
+							<li><a href="#">AUDITION</a></li>
+							
+							
+						</ul>
+					</div>
+
+					
+					
+			
+
+					<div class="text">
+						<h3>WOODZ-POOL</h3>
+						<p >Yuehua story</p>
 					</div>
 				</div>
 
@@ -152,7 +247,13 @@
 
 			</div>
 		</div>
-		<div class="section page" id="page2" data-anchor="2st"></div>
+		
+			<div class="section page" id="page2" data-anchor="2st">
+				<ul class="slider">
+					<li class="first">1</li>
+					<li class="second">2</li>
+				</ul>
+		</div>
 		<div class="section page" id="page3" data-anchor="3st"></div>
 		<div class="section page" id="page4" data-anchor="4st"></div>
 
