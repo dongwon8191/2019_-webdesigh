@@ -70,17 +70,17 @@ html.fp-enabled,
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.fp-controlArrow.fp-prev { 
-    left: 15px;
+.fp-controlArrow.fp-prev { display: none;
+    /*left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent #fff transparent transparent;*/
 }
-.fp-controlArrow.fp-next { 
-    right: 15px;
+.fp-controlArrow.fp-next { display: none;}
+   /* right: 15px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
-}
+}*/
 .fp-scrollable {
     overflow: hidden;
     position: relative;
@@ -158,20 +158,21 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 15px;
-    width:15px;
+    height: 20px;
+    width:20px;
     /*margin: -6px 0 0 -6px;*/
     border-radius: 100%;
+    background-color: #fff;
  }
-#fp-nav ul li a span,
+
 .fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 10px;
-    width: 10px;
-    border: 0;
-    background: #f3582c;
+    height: 15px;
+    width: 15px;
+    border:3px solid #fff;
+    background:none;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -180,6 +181,24 @@ html.fp-enabled,
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
+
+#fp-nav ul li a span{border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 15px;
+    width: 15px;
+    
+    background-color:orange;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-}
+
+
+
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
     width: 20px;
