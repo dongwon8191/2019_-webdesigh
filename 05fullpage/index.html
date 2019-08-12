@@ -18,23 +18,32 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-
 			var winHeight = $(window).height();
 			$("#page2 .slider li").css("height",winHeight);
-
 			  $(".slider").bxSlider({
 			  	auto:true,mode:'fade',speed:1000
 			  });
 
+			  var slider2Btn = $(".slider2").bxSlider();
+
+
+			$(".btn .prev").click(function(){
+				slider2Btn.goToPrevSlide();
+
+			});$(".btn .next").click(function(){
+				slider2Btn.goToNextSlide();
+
+			});
+ 
+
 			$("#fullpage").fullpage({
-				anchors:["1st","2st","3st","4st"],
+				anchors:["1st","2st","3st","4st","5st","6st"],
 				menu:"#topMenu",
 				navigation:true,
 				slide:true,
-
 				slidesNavigation:true,
 				navigationPosition:'right',
-				navigationTooltips:["YUEHUA","About","Artist","News"],
+				navigationTooltips:["YUEHUA","About","Business","Artist","News","Contact"],
 				afterLoad:function(anchorslink,index){
 					console.log("anchor:"+anchorslink+", index:"+index);
 					if(index == 2){
@@ -47,7 +56,7 @@
                  //on page load, start the slideshow
                   slideTimeout = setInterval(function () {
                          $.fn.fullpage.moveSlideRight();
-                     }, 8000);
+                     }, 50000);
              	}
 			});
 			$(".scroll").click(function(){
@@ -64,8 +73,6 @@
 					$(".sub_menu").stop().animate({left:"-100%"},300)
 				}
 			});
-
-
 	$(window).resize(function(){
 				var winWidth = $(window).width();
 				winHeight = $(window).height();
@@ -76,16 +83,9 @@
 				}
 				$("#page4 .slider01 li").css("height",winHeight);
 			});
-
-
 	
-
-
-
 	
 		});
-
-
 			
 		     
 		
@@ -128,6 +128,13 @@
 							
 						
 						</p>
+					</div>
+
+					<div class="sns_wrapper clearfix">
+						<img src="images/ico_facebook.png" alt="facebook">
+						<img src="images/ico_insta.png" alt="insta">
+						<img src="images/ico_twitter.png" alt="twitter">
+						<img src="images/ico_youtube.png" alt="youtube">
 					</div>
 					
 					<div id="movie_wrapper" class="clearfix">
@@ -176,7 +183,6 @@
 						<ul>
 							<li><a href="#">YUEHUA</a></li>
 							<li><a href="#">ABOUT</a></li>
-
 							<li><a href="#">ARTIST</a></li>
 							<li><a href="#">SPECIAL PROJECTS</a></li>
 							<li><a href="#">CONTACT US</a></li>
@@ -212,7 +218,6 @@
 						<ul>
 							<li><a href="#">YUEHUA</a></li>
 							<li><a href="#">ABOUT</a></li>
-
 							<li><a href="#">ARTIST</a></li>
 							<li><a href="#">SPECIAL PROJECTS</a></li>
 							<li><a href="#">CONTACT US</a></li>
@@ -248,7 +253,6 @@
 						<ul>
 							<li><a href="#">YUEHUA</a></li>
 							<li><a href="#">ABOUT</a></li>
-
 							<li><a href="#">ARTIST</a></li>
 							<li><a href="#">SPECIAL PROJECTS</a></li>
 							<li><a href="#">CONTACT US</a></li>
@@ -301,9 +305,17 @@
 				</ul>
 		</div>
 		<div class="section page" id="page3" data-anchor="3st">
+			<div class="page2_text">
+				<h3>"Global Total Entertainment LTD"</h3>
+			</div>
+			<div class="wrapper">
+				<!-- <img src="images/image7.jpg" alt=""> -->
+			</div>
+		</div>
+
+		<div class="section page" id="page4" data-anchor="4st">
 			<!-- <div class="title_text clearfix">
 				<h3>Artist</h3>
-
 				<div class="list">
 					<p class="oneart"> All </p>
 					<p class="twoart"> | singer | actor </p>
@@ -316,12 +328,14 @@
 					<li class="pe01"><a href="#">
 						<img src="images/art01.png" alt="">
 						<div class="overlay">
-							<div class="intext">
+							<div class="intext ">
 								<h3>NEXT7</h3>
 									<p>singer</p>
-									<!-- <div class="sns">
-										<img src="" alt="">
-									</div> -->
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
+									</div>
 							</div>
 						</div>
 					</a></li>
@@ -331,8 +345,10 @@
 							<div class="intext">
 								<h3>우주소녀</h3>
 									<p>singer</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -345,8 +361,10 @@
 							<div class="intext">
 								<h3>WOODZ</h3>
 									<p>singer</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -358,8 +376,10 @@
 							<div class="intext">
 								<h3>형섭X의웅</h3>
 									<p>singer</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -373,8 +393,10 @@
 								<div class="intext">
 								<h3>에버글로우</h3>
 									<p>singer</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -387,8 +409,10 @@
 								<div class="intext">
 								<h3>유니크</h3>
 									<p>singer</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -401,8 +425,10 @@
 								<div class="intext">
 								<h3>성주</h3>
 									<p>singer/actor</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -416,8 +442,10 @@
 								<div class="intext">
 								<h3>이도현</h3>
 									<p>actor</p>
-									<div class="sns">
-										<img src="" alt="">
+									<div class="sns clearfix">
+										<img src="images/ico_insta.png" alt="">
+										<img src="images/ico_youtube.png" alt="">
+										<img src="images/ico_twitter.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -427,7 +455,132 @@
 				</ul>
 			</div>
 		</div>
-		<div class="section page" id="page4" data-anchor="4st"></div>
+		
+		<div class="section page" id="page5" data-anchor="5st">
+			<div class="left_wrapper">
+				<h3>NEWS</h3>
+			</div>
+			<div class="right_wrapper">
+				<div class="slider2">
+					
+						
+					
+					<div class="news_wrapper">
+					
+						<h3>News</h3>
+						<!-- <img src="images/slider-icon.png" alt="" class="slider_icon"> -->
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/s.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[우주소녀] 컴백! 우주소녀 '우주 플리즈?' 포토 티저 공개</h3>
+									<p> 우주소녀가 오는 19일 컴백을 확정짓고 1차 티저를 공개하였다
+					                                    "WJ PLEASE?"에서는 지난 앨범보다 더욱 업그레이드 된
+					                                     마법학교 콘셉트로 특별한 세계를 이어갈 예정이다.
+					                                     우주소녀는 마법학교 1학년이자 꿈의 배달부 포레우스(φορευς) 유닛, 꿈을 수집하는
+					                                     마법학교 2학년 아귀르떼스(αγυρτης) 유닛, 꿈을 현실로 완성시켜 주는
+					                                     마법학교 3학년 에뉩니온(ενυπνιον) 유닛으로 나뉘어 매력적인 세계를 표현한다.</p>
+								</div>
+					
+							</li>
+					
+					
+					
+					
+					
+						
+						</ul>
+					
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/s3.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[에버글로우]신인 걸 그룹 '에버글로우'의 세번째 멤버 온다의 상큼발랄 영상 공개</h3>
+									<p> 에버글로우의 막내 라인 온다는 팝 컬러의 화려하면서도 밝은 영상미와 사랑스러운
+					                                    매력으로 한층 더 빛을 바라며 마치 한편의 화보 촬영장을 보는 것 같은 환상을 불러일으킨다. 
+					
+					                                    온다의 작업실처럼 핑크빛 네온사인과 아기자기한 소품들로 세상 가장 환하고 
+					                                    밝은 미소를 보여주는 온다의 영상은 4차원 엉뚱 소녀의 사랑스러운 캐럭터를 더욱 확실히 보여준다.
+					                                    특히 토끼모자를 쓰고 환하게 미소 짓는 입꼬리와 눈웃음은 남심을 저격, 팬들의 입덕 포인트가 되기
+					                                    충분하다.
+					</p>
+								</div>
+					
+							</li>
+					
+					
+					
+					
+					
+						
+						</ul>
+					
+						</ul>
+					
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/s4.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[조승연] x1 8월 27일 데뷔</h3>
+									<p> 프로듀스 101 프로그램을 통해 데뷔하는 그룹 엑스원이
+									오는 8월 27일 첫 데뷔앨범을 발매한다 
+								    앨범은 오후 6시 정각에 발표하며 앨범 수록곡들과 다양한 노래들을
+							        8월 27일 당일 데뷔 쇼케이스 콘서트에서 선보일 예정이다.
+							        엑스원의 데뷔 첫 ‘프리미어 쇼콘’은 오는 6일 오후 8시 온라인 티켓 예매사이트 인터파크 티켓에서 단독으로 진행된다. 이날은 X1 공식 팬클럽 회원에 한해 예매 가능하다. 일반 예매는 오는 7일 오후 8시부터 시작된다. 
+						  </p>
+								</div>
+					
+							</li>
+					
+					
+					
+					
+					
+						
+						</ul>
+					
+					
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/s5.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[이도현] 이도현, '호텔 델루나'로 TV드라마 출연자 화제성 지수 5위</h3>
+									<p> tvN 토일드라마 ‘호텔 델루나’가 11일 출연 배우 이도현의 촬영 현장 비하인드 사진을 공개했다.
+					
+					                                 이도현은 길고 긴 세월 동안 호텔 델루나에 묶여있는 장만월(이지은 분)의 과거와 깊숙하게 얽혀있는 무주국의 무장 고청명 역을 맡았다.
+					
+					                                 능청스러우면서도 다정하고, 듬직하기까지 한 고청명은 이도현을 통해 더욱 매력적인 인물로 그려졌다. 이도현은 굿데이터코퍼레이션이 발표한 8월 1주차 TV드라마 출연자 화제성 5위에도 올랐다.
+						  </p>
+								</div>
+					
+							</li>
+					
+					
+					
+					
+					
+						
+						</ul>
+					
+							
+					
+					
+					</div>
+
+					<div class="news_wrapper02">
+						fddfgfghsds
+					</div>
+				</div>
+				<div class="btn clearfix">
+					<img src="images/slider-icon01.png" alt="" class="prev">
+					<img src="images/slider-icon1.png" alt="" class="prev1">
+					<img src="images/slider-icon2.png" alt="" class="next1">
+					<img src="images/slider-icon02.png" alt="" class="next">
+				</div>
+			</div>
+		</div>
+
+		<div class="section page" id="page6" data-anchor="6st"></div>
 
 	</div>
 </body>
