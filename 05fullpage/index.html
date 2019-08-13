@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>YUE HUA ENTERTAINMENT</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,6 +18,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 			var winHeight = $(window).height();
@@ -24,7 +27,9 @@
 			  	auto:true,mode:'fade',speed:1000
 			  });
 
-			  var slider2Btn = $(".slider2").bxSlider();
+			  var slider2Btn = $(".slider2").bxSlider({
+			  	pager:false
+			  });
 
 
 			$(".btn .prev").click(function(){
@@ -37,13 +42,13 @@
  
 
 			$("#fullpage").fullpage({
-				anchors:["1st","2st","3st","4st","5st","6st"],
+				anchors:["1st","02st","2st","3st","4st","5st","6st"],
 				menu:"#topMenu",
 				navigation:true,
 				slide:true,
 				slidesNavigation:true,
 				navigationPosition:'right',
-				navigationTooltips:["YUEHUA","About","Business","Artist","News","Contact"],
+				navigationTooltips:["YUEHUA","+","About","Business","Artist","News","Contact"],
 				afterLoad:function(anchorslink,index){
 					console.log("anchor:"+anchorslink+", index:"+index);
 					if(index == 2){
@@ -83,6 +88,9 @@
 				}
 				$("#page4 .slider01 li").css("height",winHeight);
 			});
+    $(".group1").colorbox({rel:"group1",transition:"fade"});
+	$(".youtube").colorbox({iframe:true,innerWidth:600,innerHeight:338});
+	
 	
 	
 		});
@@ -131,28 +139,58 @@
 					</div>
 
 					<div class="sns_wrapper clearfix">
-						<img src="images/ico_facebook.png" alt="facebook">
-						<img src="images/ico_insta.png" alt="insta">
-						<img src="images/ico_twitter.png" alt="twitter">
-						<img src="images/ico_youtube.png" alt="youtube">
+						<a href="https://www.facebook.com/yuehua.entertainment/">
+							<img src="images/ico_facebook.png" alt="facebook">
+						</a>
+
+						<a href="https://www.instagram.com/yh_audition/?hl=ko">
+							<img src="images/ico_insta.png" alt="insta">
+						</a>
+
+						<a href="https://twitter.com/yhent_korea">
+							<img src="images/ico_twitter.png" alt="twitter">
+						</a>
+
+						<a href="https://www.youtube.com/channel/UCDTPlhsjCao8F02EP9HORAA">
+							<img src="images/ico_youtube.png" alt="youtube">
+						</a>
+
 					</div>
 					
 					<div id="movie_wrapper" class="clearfix">
+						<a href="https://www.youtube.com/embed/OmW6J3IxyWk" class="youtube" title="승연-요즘뭐해">
 						<div class="movie01">
-							<img src="images/movie01.jpg" alt="" class="img">
-							<img src="images/movie_button.png" alt="" class="button">
-							<div class="back"></div>
+							
+								<img src="images/movie01.jpg" alt="" class="img">
+								<img src="images/movie_button.png" alt="" class="button">
+								<div class="back"></div>
+							
 						</div>
+					</a>
+
+					<a href="https://www.youtube.com/embed/96THVBRqJvY" class="youtube" title="유니크-EOEO">
+
+
+
 						<div class="movie03">
 							<img src="images/movie03.jpg" alt="img"class="img" >
 							<img src="images/movie_button.png" alt="" class="button">
 							<div class="back"></div>
 						</div>
+
+					</a>
+
+						<a href="https://www.youtube.com/embed/zeAtkPZSYBk" class="youtube" title="우주소녀-Boogie Up">
+
+
+
 						<div class="movie02">
 							<img src="images/movie02.jpg" alt="" class="img">
 							<img src="images/movie_button.png" alt="" class="button">
 							<div class="back"></div>
 						</div>
+
+						<a>
 						
 						
 					</div>
@@ -278,6 +316,16 @@
 
 			</div>
 		</div>
+		<div class="section page" id="page02" data-anchor="02st">
+				<video id="myVideo" loop="" muted="" data-autoplay="">
+			<source src="images/POOL.mp4" type="video/mp4">
+			
+		</video>
+		</div>
+
+
+
+
 		
 			<div class="section page" id="page2" data-anchor="2st">
 				<ul class="slider">
@@ -332,9 +380,9 @@
 								<h3>NEXT7</h3>
 									<p>singer</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -346,9 +394,9 @@
 								<h3>우주소녀</h3>
 									<p>singer</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -362,9 +410,9 @@
 								<h3>WOODZ</h3>
 									<p>singer</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -377,9 +425,9 @@
 								<h3>형섭X의웅</h3>
 									<p>singer</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 						</div>
@@ -394,9 +442,9 @@
 								<h3>에버글로우</h3>
 									<p>singer</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -410,9 +458,9 @@
 								<h3>유니크</h3>
 									<p>singer</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -426,9 +474,9 @@
 								<h3>성주</h3>
 									<p>singer/actor</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -443,9 +491,9 @@
 								<h3>이도현</h3>
 									<p>actor</p>
 									<div class="sns clearfix">
-										<img src="images/ico_insta.png" alt="">
-										<img src="images/ico_youtube.png" alt="">
-										<img src="images/ico_twitter.png" alt="">
+										<img src="images/ico_insta1.png" alt="">
+										<img src="images/ico_youtube1.png" alt="">
+										<img src="images/ico_twitter1.png" alt="">
 									</div>
 							</div>
 							</div>
@@ -469,40 +517,43 @@
 					
 						<h3>News</h3>
 						<!-- <img src="images/slider-icon.png" alt="" class="slider_icon"> -->
-						<ul>
-							<li class="clearfix line01">
-								<img src="images/s.jpg" alt="" class="left">
-								<div class="right"> 
-									<h4>[우주소녀] 컴백! 우주소녀 '우주 플리즈?' 포토 티저 공개</h3>
-									<p> 우주소녀가 오는 19일 컴백을 확정짓고 1차 티저를 공개하였다
-					                                    "WJ PLEASE?"에서는 지난 앨범보다 더욱 업그레이드 된
-					                                     마법학교 콘셉트로 특별한 세계를 이어갈 예정이다.
-					                                     우주소녀는 마법학교 1학년이자 꿈의 배달부 포레우스(φορευς) 유닛, 꿈을 수집하는
-					                                     마법학교 2학년 아귀르떼스(αγυρτης) 유닛, 꿈을 현실로 완성시켜 주는
-					                                     마법학교 3학년 에뉩니온(ενυπνιον) 유닛으로 나뉘어 매력적인 세계를 표현한다.</p>
-								</div>
-					
-							</li>
-					
-					
-					
-					
-					
 						
-						</ul>
-					
+							<ul>
+
+
+								<li class="clearfix line01">
+									
+								<a href="https://www.youtube.com/embed/OmW6J3IxyWk" class="youtube" title="승연-요즘뭐해">
+									<img src="images/s.jpg" alt="" class="left"></a>
+									
+									<div class="right"> 
+										<h4>[우주소녀] 컴백! 우주소녀 '우주 플리즈?' 포토 티저 공개</h3>
+										<p> 우주소녀가 오는 19일 컴백을 확정짓고 1차 티저를 공개하였다
+										"WJ PLEASE?"에서는 지난 앨범보다 더욱 업그레이드 된
+										마법학교 콘셉트로 특별한 세계를 이어갈 예정이다.</p>
+												                                  
+									</div>
+								
+																	
+								</li>
+												
+												
+												
+												
+												
+							
+							</ul>
+						
 						<ul>
 							<li class="clearfix line01">
 								<img src="images/s3.jpg" alt="" class="left">
 								<div class="right"> 
-									<h4>[에버글로우]신인 걸 그룹 '에버글로우'의 세번째 멤버 온다의 상큼발랄 영상 공개</h3>
+									<h4>[에버글로우] 에버글로우'의 상큼발랄 영상 공개</h3>
 									<p> 에버글로우의 막내 라인 온다는 팝 컬러의 화려하면서도 밝은 영상미와 사랑스러운
 					                                    매력으로 한층 더 빛을 바라며 마치 한편의 화보 촬영장을 보는 것 같은 환상을 불러일으킨다. 
 					
-					                                    온다의 작업실처럼 핑크빛 네온사인과 아기자기한 소품들로 세상 가장 환하고 
-					                                    밝은 미소를 보여주는 온다의 영상은 4차원 엉뚱 소녀의 사랑스러운 캐럭터를 더욱 확실히 보여준다.
-					                                    특히 토끼모자를 쓰고 환하게 미소 짓는 입꼬리와 눈웃음은 남심을 저격, 팬들의 입덕 포인트가 되기
-					                                    충분하다.
+					                                    온다의 작업실처럼 핑크빛 네온사인과 아기자기한 소품들로 세상 가장 환하고... 
+					                                  
 					</p>
 								</div>
 					
@@ -525,9 +576,8 @@
 									<p> 프로듀스 101 프로그램을 통해 데뷔하는 그룹 엑스원이
 									오는 8월 27일 첫 데뷔앨범을 발매한다 
 								    앨범은 오후 6시 정각에 발표하며 앨범 수록곡들과 다양한 노래들을
-							        8월 27일 당일 데뷔 쇼케이스 콘서트에서 선보일 예정이다.
-							        엑스원의 데뷔 첫 ‘프리미어 쇼콘’은 오는 6일 오후 8시 온라인 티켓 예매사이트 인터파크 티켓에서 단독으로 진행된다. 이날은 X1 공식 팬클럽 회원에 한해 예매 가능하다. 일반 예매는 오는 7일 오후 8시부터 시작된다. 
-						  </p>
+							        8월 27일 당일 데뷔 쇼케이스 콘서트에서 선보일...
+							     
 								</div>
 					
 							</li>
@@ -544,12 +594,12 @@
 							<li class="clearfix line01">
 								<img src="images/s5.jpg" alt="" class="left">
 								<div class="right"> 
-									<h4>[이도현] 이도현, '호텔 델루나'로 TV드라마 출연자 화제성 지수 5위</h3>
+									<h4>[이도현]'호텔 델루나'로 TV드라마 출연자 화제성 지수 5위</h3>
 									<p> tvN 토일드라마 ‘호텔 델루나’가 11일 출연 배우 이도현의 촬영 현장 비하인드 사진을 공개했다.
 					
-					                                 이도현은 길고 긴 세월 동안 호텔 델루나에 묶여있는 장만월(이지은 분)의 과거와 깊숙하게 얽혀있는 무주국의 무장 고청명 역을 맡았다.
+					                                 이도현은 길고 긴 세월 동안 호텔 델루나에 묶여있는 장만월(이지은 분)의 과거와 
+					                                 깊숙하게 얽혀있는 무주국의 무장 고청명 역을...
 					
-					                                 능청스러우면서도 다정하고, 듬직하기까지 한 고청명은 이도현을 통해 더욱 매력적인 인물로 그려졌다. 이도현은 굿데이터코퍼레이션이 발표한 8월 1주차 TV드라마 출연자 화제성 5위에도 올랐다.
 						  </p>
 								</div>
 					
@@ -568,13 +618,81 @@
 					</div>
 
 					<div class="news_wrapper02">
-						fddfgfghsds
+						<h3>News</h3>
+						<!-- <img src="images/slider-icon.png" alt="" class="slider_icon"> -->
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/h1.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[에버글로우] 에버글로우가 쥬얼리 브랜드 모델이 됐다</h3>
+									<p> 걸그룹 에버글로우가 쥬얼리 광고로 러블리한 매력을 발산했다.
+
+
+
+                                        에버글로우는 지난 3월 데뷔 후 2주 만에 멤버 시현이 온라인 쇼핑 브랜드 모델로 발탁된 데 이어, 3개월 만에 쥬얼리 브랜드까지 거머쥐며 '광고계 블루칩'으로....</p>
+								</div>
+					
+							</li>
+						</ul>
+
+
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/h2.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[안형섭]  안형섭이 소년에서 남자로 변신, 여심 강탈을 예고했다. </h3>
+                                                
+									<p> 공개된 사진 속 안형섭은 아날로그 필름 감성의 아련한 바이올렛 톤에 한층 더 날렵해진   턱선으로 20살 성인으로 성장한 남자의 매력을 유감없이 드러냈다. 
+                                     몽환적이고 클래식한 눈빛과 감각적인.... </p>
+								</div>
+					
+							</li>
+						</ul>
+
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/h3.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[안형섭]  안형섭이 소년에서 남자로 변신, 여심 강탈을 예고했다. </h3>
+                                                
+									<p> 공개된 사진 속 안형섭은 아날로그 필름 감성의 아련한 바이올렛 톤에 한층 더 날렵해진   턱선으로 20살 성인으로 성장한 남자의 매력을 유감없이 드러냈다. 
+                                     몽환적이고 클래식한 눈빛과 감각적인.... </p>
+								</div>
+					
+							</li>
+						</ul>
+
+						<ul>
+							<li class="clearfix line01">
+								<img src="images/h4.jpg" alt="" class="left">
+								<div class="right"> 
+									<h4>[안형섭]  안형섭이 소년에서 남자로 변신, 여심 강탈을 예고했다. </h3>
+                                                
+									<p> 공개된 사진 속 안형섭은 아날로그 필름 감성의 아련한 바이올렛 톤에 한층 더 날렵해진   턱선으로 20살 성인으로 성장한 남자의 매력을 유감없이 드러냈다. 
+                                     몽환적이고 클래식한 눈빛과 감각적인.... </p>
+								</div>
+					
+							</li>
+						</ul>
+
+
+
+					
+					
+					
+					
+					
+						
+						
+					
+
+						
 					</div>
 				</div>
 				<div class="btn clearfix">
 					<img src="images/slider-icon01.png" alt="" class="prev">
-					<img src="images/slider-icon1.png" alt="" class="prev1">
-					<img src="images/slider-icon2.png" alt="" class="next1">
+					<!-- <img src="images/slider-icon1.png" alt="" class="prev1">
+					<img src="images/slider-icon2.png" alt="" class="next1"> -->
 					<img src="images/slider-icon02.png" alt="" class="next">
 				</div>
 			</div>

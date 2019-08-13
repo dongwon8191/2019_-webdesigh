@@ -178,6 +178,9 @@ padding-bottom:10px;}
 
 
 
+
+
+
 .movie01 .button{position: absolute; top: 30px; left: 80px;}
 .movie02 .button{position: absolute; top: 30px; left: 80px;}
 .movie03 .button{position: absolute; top: 30px; left: 80px;}
@@ -386,7 +389,7 @@ width: 100% !important;}
 
 
 	.left_wrapper{
-		width: 47%; height: 100%; 
+		width: 55.46%; height: 100%; 
 		position: absolute; left: 0; top: 0; background-color:#000;}
 		.left_wrapper{background-image:url(../images/sub_news.jpg); background-size:cover; 
 	background-position:center top;}
@@ -397,18 +400,19 @@ width: 100% !important;}
 	.left_wrapper h3:after{
 		content:""; display: block; width:230px; height: 2px; background-color:#fff;
 		position: absolute;bottom: 35px; }	
-	.right_wrapper{width: 53%;  position: absolute; right: 0; top: 0; }
+	.right_wrapper{width: 44.53%;  position: absolute; right: 0; top: 0; }
 
 	.right_wrapper .btn{position: absolute; top: 100px; right: 100px; cursor:pointer}
 	.right_wrapper .btn img{display: block; float: left;}
-	.btn img.prev1{display: none;}
+
+/*	.btn img.prev1{display: none;}
 	.btn .prev:hover img.prev1{display: block;}
 	.btn:hover img.prev{display: none;}
 
 	.btn img.next1{display: none;}
 	.btn img .next:hover img.next1{display: block;}
 	.btn:hover img.next{display: none;}
-
+*/
 
 
 	/*new_wrapper*/
@@ -416,27 +420,97 @@ width: 100% !important;}
 
 
 	.news_wrapper ul{width: 100%;height: 300%;
-		border-bottom: 1px solid #cdcdcd; height: 200px;  }
+		border-bottom: 1px solid #cdcdcd; height: 180px;  }
 
 
-	.news_wrapper ul li{width: 1000px; padding-right: 20px; padding-top: 30px;  }
+	.news_wrapper ul li{width: 500px;/* padding-right: 20px; padding-top: 30px;*/  }
 	.news_wrapper ul li.line01{}
-	.news_wrapper ul li .left{display: block;float: left; width:250px; height: 150px;
-	 padding-top: -30px; padding-left:30px; }
-	.news_wrapper ul li .right{float: right; width: 700px; height: 150px;}
-	.news_wrapper ul li .right h4{font-size:18px;}
-	.news_wrapper ul li .right p{font-size:0.8em; padding-top:10px;}
-     .news_wrapper img.slider_icon{position: absolute; right: 100px; top: 100px;}
-     .news_wrapper{position: relative;}
+	.news_wrapper ul li .left{display: block;float: left; width:220px; height: 150px;
+	 padding-top: 15px; padding-left:30px; }
+	.news_wrapper ul li .right{float: right; width: 280px; height: 150px; padding-top:15px; padding-left:30px;}
+	.news_wrapper ul li .right h4{font-size:18px; width: 527px; text-align: center;}
+	.news_wrapper ul li .right p{font-size:16px; padding-top:10px; width: 520px;  color:gray;}
+    .news_wrapper img.slider_icon{position: absolute; right: 100px; top: 100px;}
+    .news_wrapper{position: relative;}
 
 
 
 
 
 	.right_wrapper .news_wrapper h3{
-		font-size:40px; font-weight:bold; padding-top:80px; padding-left:20px; text-align: left;}
+		font-size:40px; 
+		font-weight:bold; padding-top:80px;
+		padding-bottom:50px;
+		padding-left:20px;
+		 text-align: left;
+	}
 
-		.news_wrapper02{background-color:pink; }
+		
+
+
+
+
+.bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:0 none;
+    background:0 none;
+    height: 100%;
+}
+
+.bx-viewport{height: 100% !important;}
+
+/*news_wrapper*/
+
+
+
+
+.news_wrapper02{}
+
+
+
+	
+	.news_wrapper02 ul{width: 100%;height: 300%;
+		border-bottom: 1px solid #cdcdcd; height: 180px;  padding-top:15px; }
+
+
+	.news_wrapper02 ul li{width: 500px;/* padding-right: 20px; padding-top: 30px;*/  }
+	.news_wrapper02 ul li.line01{}
+	.news_wrapper02 ul li .left{display: block;float: left; width:220px; height: 150px;
+	 padding-top: 15px; padding-left:30px; }
+	.news_wrapper02 ul li .right{float: right; width: 280px; height: 150px; padding-top:15px; padding-left:30px;}
+	.news_wrapper02 ul li .right h4{font-size:18px; width: 527px; text-align: center;}
+	.news_wrapper02 ul li .right p{font-size:16px; padding-top:10px; width: 520px;  color:gray;}
+    .news_wrapper02 img.slider_icon{position: absolute; right: 100px; top: 100px;}
+    .news_wrapper02{position: relative;}
+
+
+
+
+
+	.right_wrapper .news_wrapper02 h3{
+		font-size:40px; padding-bottom:50px;
+		 font-weight:bold; padding-top:80px; padding-left:20px; text-align: left;}
+
+
+		#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
 
 
 
