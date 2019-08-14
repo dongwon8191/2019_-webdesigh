@@ -226,7 +226,7 @@ html.fp-enabled,
     position: fixed;
    right: 50px; width: 150px;
    /* background-color:skyblue;*/
-    top: 50%;}
+    top: 50%; cursor:pointer;}
 
 #fp-nav ul{}    
 #fp-nav ul li{height: 30px; position: relative;}    
