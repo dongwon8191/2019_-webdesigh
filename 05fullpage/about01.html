@@ -3,11 +3,13 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>parallax</title>
-	<link rel="stylesheet" href="../css/reset.css">
+	<title>about</title>
+	<link rel="stylesheet" href="css/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<style>
-		html,body{height:100%; width: 100%;}
+		html,body{height:100%;background-color:black;}
 		.scene{
 			width: 100%;height: 100%;
 			background-attachment:fixed;
@@ -15,28 +17,103 @@
 			background-size: cover;
 			position: relative;
 		}
-		.scene.one{
-			background-image: url(images/pc01.jpg);
+		.scene.one{ 
+			background-image: url(images/vd.jpg);
 		}
 		
-		.scene.two{
-			background-image: url(images/14.png);
+		.scene.two{ 
+		background-image: url(images/egg8.jpg);
 		}
-		.scene.three{
-			background-image: url(images1/pc03.jpg);
-		}
-		.scene div{
-			color:white;width:600px;position: absolute;
-			left:50%;top:50%;transform:translate(-50%,-50%);
-			text-align: center;font-size:1.5em
+		.scene.three{ height: 180% !important;
+			background-image: url(images/ps.jpg);
 		}
 
-		.scene div h1{font-size:120px;}
-		/*.scene div h1:after{
+		.scene.four{height: 50% !important;
+			background-image: url(images/egg2.jpg);
+		}
+
+		.scene.five{height: 100% !important;
+			background-image: url(images/ps2.jpg);
+		}
+		.scene div{
+			color:#000;width:1000px;position: absolute;
+			left:50%;top:50%;transform:translate(-50%,-50%);
+			text-align: center;
+		}
+
+		/*one*/
+
+		.scene.one div p.v0{font-size:150px; color:white !important; font-weight: bold; font-family: 'Roboto', sans-serif;}
+		.scene.one .v{padding-top:100px; color:gray; font-weight:bold; text-align: left; padding-left: 600px;}
+
+
+		/*two*/
+		.scene.two div p{color:#fff !important; font-size:18px; width: 800px !important; }
+		
+
+		.scene.two div h3:after{
 			content:"";
-			width:100%;height: 1px;background-color: #fff;
+			width:50px;height: 1px;background-color: #fff;
 			display: block;margin:10px;
-		}*/
+		}
+
+/*
+		#video {
+
+   
+    
+     
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1;
+     overflow: hidden;}*/
+
+
+
+     /*three*/
+
+     .scene.three div img{ width:1500px; display: block;  position: absolute; top: 100px; right: -200px;
+
+     }
+     .scene.three img.vi{ top:800px;}
+
+     
+     .scene.three{position: relative;}
+     .scene.three div.body{position: absolute; top: 300px;}
+    
+     .scene.three div .text{ color:black; position: absolute; }
+     .scene.three div .text h3{ font-size:50px; text-align: center; padding-bottom: 100px;}
+
+
+     /*four*/
+
+
+     .scene.four div .text{color:white; width: 1500px !important;}
+     .scene.four div .text h3{font-size:80px;}
+     .scene.four div .text p{ font-weight:bold; font-size:16px; padding-top: 30px;  }
+
+
+     /*five*/
+  
+
+
+     .scene.five img{padding-left:300px; display: block; padding-top: 200px;}
+     .scene.five img.pa{padding-top: 5px; width: 1500px; height: 300px;}
+     
+    
+     .scene.five ul{width: 100%; padding-left: 120px; padding-top: 100px;}
+     .scene.five ul li{float: left; width: 16%;}
+     .scene.five ul li a{color:white; display: block; text-align: center; font-size: 28px; font-weight: bold;  }
+     .scene.five ul li a:hover{color:#f1582c; }
+    
+
+     
+
+
+
+
 		
 	</style>
 	<script>
@@ -53,22 +130,82 @@
 	<!-- section.scene*3>div>h1>lorem5^p>lorem20 -->
 	
 	<section class="scene one" id="v01s">
+	<!-- 	<video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+      <source src="images/EOEO.mp4"></video> -->
+
 		<div>
-			<h1>About us</h1>
+			<!-- <P class="v0">ABOUT US</P> -->
+
+           <!--  <p class="v">위에화엔터테인먼트의 새로운 음악, 아티스트를 통해<br>
+             당신의 일상이 특별한 즐거움으로 채워집니다.</p>
+			 -->
+		</div>
+	</section>
+	<section class="scene two" id="v02s">	
+
+
+	
+		
 			
-		</div>
+		
 	</section>
-	<section class="scene two" id="v02s">
-		<div>
-			<h1>Consequatur repudiandae in numquam, repellendus!</h1>
-			<p>Praesentium architecto in hic asperiores porro unde quaerat, nihil explicabo veritatis ad aliquid nulla voluptatum quidem dolore ullam laboriosam dolorum.</p>
-		</div>
-	</section>
+
 	<section class="scene three" id="v03s">
-		<div>
-			<h1>Error laudantium excepturi, modi dicta.</h1>
-			<p>Eaque laudantium, provident. Esse tenetur facilis recusandae obcaecati explicabo repudiandae consectetur ratione qui pariatur deleniti ut minima officia, excepturi doloribus.</p>
-		</div>
+
+		
+
+		
+			<div class="body">
+							<div class="text">
+								<h3>BUSINESS</h3>
+								<img src="images/fg.png" alt="">
+								<img src="images/bi0.png" alt="" class="vi">
+								<!-- <img src="images/visi.png" alt="" class="visi"> -->
+				
+								<!-- <p>국내 최대 규모의 투자, 제작, 유통을 통해 K-POP 한류를 선도하며,<br>
+				                  각 사업분야별 전문성 및 핵심역량을 발휘하기 위한 특화된 조직구성과<br>
+				                  운영으로 글로벌 경쟁력 및 음악산업의 성장성을 제고하기 위해 노력하고 있습니다.
+				                </p> -->
+				
+				
+							</div>
+						</div>
+		
+	</section>
+
+	<section class="scene four" id="v04s">
+				<div class="body">
+							<div class="text">
+								<h3>VISION
+                                    NO.1 GLOBAL
+                                    MUSIC BRAND</h3>
+
+								<p>종합적 음악 역량과 우수 IP를 기반으로
+                                   K-POP을 리드하는 No.1 Global Music Brand
+
+                                  우수 레이블과의
+                                  동반성장 비인기 장르 성장 도모 신인 발굴 등
+                                 
+                                  
+                                   K-POP 선순환 구조에 앞장서는 상생의 Music Brand
+                               </p>
+
+							
+							</div>
+						</div>
+		
+		
+	</section>
+
+	<section class="scene five" id="v05s">
+
+		<img src="images/yue.jpg" alt="">
+		<img src="images/ra.png" alt="" class="pa">
+		
+
+	
+	
+		
 	</section>
 </body>
 </html>
