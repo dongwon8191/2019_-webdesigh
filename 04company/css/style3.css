@@ -270,8 +270,8 @@ z-index:1;}
 
 
 
-.search_wrapper>h3{font-size:2em; position: relative; color:#e6922c;}
-    .search_wrapper>h3:after{content:""; display: block;
+.search_wrapper>h3{font-size:2em;  color:#e6922c; margin:0 auto;}
+    .search_wrapper>h3:before{content:""; display: block;
      width: 50px; height: 3px; background-color: #e6922c;
      position: absolute; top:60px; left: 470px;}
 .search_wrapper>.searchbox{float: right; }
@@ -303,14 +303,34 @@ z-index:1;}
 
   .content_box2{width: 1260px; height:1600px; 
     margin:0 auto; }
-    .content_box2>img{display: block; margin:100px auto;}
+
+  .content_box2>h3{font-size:2em;
+     color:#e6922c; text-align: center; padding-top:80px; }
+
+  .content_box2>.card-wrap{width: 1020px;height: 215px; margin: 50px auto;}
+  .content_box2>.card-wrap>li{display: block; float: left;  }
+  .content_box2>.card-wrap>li.text{margin-left:20px}
+  .content_box2>.card-wrap>li>img{display: block;}
+  
+  .content_box2>.card-wrap>li.om>.txt{display:none}
+  .content_box2>.card-wrap>li.om:hover .txt{display: block; 
+    transform:translate(-50%,-50%); position: absolute; top: 50%; left: 50%; font-weight:bold;
+   width: 120px; height: 50px; border: 2px solid #415e28;; text-align: center;}
+     .content_box2>.card-wrap>li.om:hover img.im{opacity:0.5; cursor:pointer}
+    .content_box2>.card-wrap>li.om{position: relative;}
+    .content_box2>.card-wrap>li.text>button:hover{background-color:white !important;
+     border: 1px solid #000 !important;
+      color:#e6922c !important;
+    }
 
 
-    .content_box2>h3{font-size:2em; position: relative;
-     color:#e6922c; text-align: center; padding-top:80px; margin-left:-50px;}
-    .content_box2>h3:after{content:""; display: block;
-     width: 50px; height: 3px; background-color: #e6922c;
-     position: absolute; top:60px; left: 620px;}
+     
+
+
+
+
+    
+  
 
 
 
@@ -324,9 +344,9 @@ z-index:1;}
 
     .content_box3>h3.ev{font-size:2em; position: relative;
      color:#e6922c; text-align: center; padding-top:-80px; margin-left:-50px; }
-    .content_box3>h3.ev:after{content:""; display: block;
+ /*   .content_box3>h3.ev:after{content:""; display: block;
      width: 50px; height: 3px; background-color: #e6922c;
-     position: absolute; top:-10px; left: 620px;}
+     position: absolute; top:-10px; left: 620px;}*/
 
 
 

@@ -174,15 +174,16 @@ background-color:#fff; margin: 20px auto;}
 
     .content li.content3st{width: 50% !important; /*padding-top: 10px; padding-left:10px;*/
       position: relative; background-color:#fff; }
-    .content li.content3st>h2{width: 200px; position: absolute; top: 30px; left: 5px; }
+    .content li.content3st>h2{width: 200px; position: absolute; top: 30px; left: 25px; }
     .content li.content3st .slider2 li{width: 630px!important;}
     .content li.content3st .slider2{position: absolute; top: 0; left: 0; width: 630px;}
     .content li.content3st .slider2 div{float: left; width: 315px; height: 315px;}
-    .content li.content3st .slider2 div.left{padding-left: 5px; padding-top: 75px; 
-    }
-     .content li.content3st .slider2 div.left:after{
+    .content li.content3st .slider2 div.left{padding: 25px; margin-top: 50px; font-size:15px; }
+   
+   
+     .content li.content3st .slider2 div.left:after{ 
       content:""; border-width:20px; border-style:solid;
-      border-color:transparent transparent transparent #fff;
+      border-color:transparent transparent transparent #fff; 
       position: absolute; left: 315px; top: 120px;
      }
 
@@ -251,8 +252,8 @@ margin:15px 0;}
 
 
 
-.content .card p.x{ padding-left:30px;}
-.content .card p.y{ font-size:0.9em; text-align: center; padding-top:5px; font-weight:bold;}
+.content .card p.x{ }
+.content .card p.y{ font-size:0.9em;padding-top:5px; font-weight:bold;}
 
  #main_header .content li.content11st{
   background-color:#6993a1;
