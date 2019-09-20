@@ -8,7 +8,31 @@
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+
+>
+<link rel="stylesheet" href="css/colorbox.css">
+
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					$(".sub_menu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".sub_menu").stop().animate({left:"-100%"},300)
+				}
+			});
+		});
+	</script>
 	<style>
 		html,body{height:100%;background-color:black;}
 		.scene{
@@ -70,18 +94,6 @@
 
 
 		
-		
-
-		
-
-		
-
-     
-
-
-
-
-		
 	</style>
 	<script>
 		$(document).ready(function(){
@@ -90,10 +102,71 @@
 				var offsetTop = target.offset().top;
 				$("html").animate({scrollTop:offsetTop});
 			});
+
+
 		});
 	</script>
 </head>
 <body>
+	<div id="navTop">
+		<a href="index.html"><img src="images/title.png" alt=""></a>
+
+		<div class="toggleMenu">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+	
+		</div>
+
+		<div class="sub_menu">
+			<ul>
+				<li>
+				    <a href="about01.html">
+				    	About
+					<span>About</span>
+
+				    </a>
+
+				    <hr/>
+			    </li>
+
+			
+			    <li>
+				    <a href="artist.html">
+				    	Artist
+					<span>Artist</span>
+					
+				    </a>
+
+				    <hr/>
+			    </li>
+
+			    <li>
+				    <a href="#">
+				    	Audition
+					<span>Auditiont</span>
+					
+				    </a>
+
+				    <hr/>
+			    </li>
+
+			    <li>
+				    <a href="#">
+				    	Notice
+					<span>Notice</span>
+					
+				    </a>
+
+				    <hr/>
+			    </li>
+
+
+
+
+
+
+		</div>
+	</div>
 	<!-- section.scene*3>div>h1>lorem5^p>lorem20 -->
 	
 	<section class="scene one" id="v01s">
