@@ -1,0 +1,32 @@
+@charset "utf-8";
+#main_header{background-color: #126a3a}
+#header_top{background-color:#126a3a; height: 65px; width: 1500px; margin:0 auto;}
+#main_header>#header_top>.logobox{float: left; width: 85%;}
+#main_header>#header_top>#main_menu{float: right;width: 15%;}
+#main_menu>ul{}
+#main_menu>ul>li{float: left; width: 100px }
+#main_menu>ul>li>a{color:white; font-size:18px; font-weight:bold; line-height:65px;}
+
+.slider_wrap{height: 900px;}
+.slider_wrap>ul{}
+.slider_wrap ul li{height: 900px;}
+
+.slider_wrap li.first{
+  background:url(../images/slideimg01.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.slider_wrap li.second{
+
+ background:url(../images/slideimg03.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+
+.slider_wrap li.second>.slider_txt>h3{color:black;}
+.slider_wrap li.three>.slider_txt{border: 1px solid #000; width: 500px !important;}
+.slider_wrap li.four>.slider_txt>h3:after{display: none;}
+.slider_wrap li.four>.slider_txt{position: absolute; left: 20%; top: 60%;}
+
+	

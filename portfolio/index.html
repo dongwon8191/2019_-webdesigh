@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>COMPANY</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+			var myslider = $(".slider").bxSlider();
+			
+			var slider2Btn = $(".slider2").bxSlider({
+				pager:false,controls:false});
+
+			var slider3Btn = $(".slider3").bxSlider({
+				auto:true,pager:false,controls:false});
+
+
+
+			
+
+			$(".btn .prev").click(function(){
+				slider2Btn.goToPrevSlide();
+
+			});$(".btn .next").click(function(){
+				slider2Btn.goToNextSlide();
+
+			});
+
+			$(".btn2 .prev").click(function(){
+				slider3Btn.goToPrevSlide();
+
+			});$(".btn2 .next").click(function(){
+				slider3Btn.goToNextSlide();
+
+			});
+
+
+			$(".youtube").colorbox({iframe:true, innerWidth:600,innerHeight:338});
+
+				$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					$("#main_menu").stop().animate({top:0},300);
+				}else{
+					$(this).removeClass("change");
+					$("#main_menu").stop().animate({top:"-100%"},300)
+				}
+			});
+
+			});
+
+
+		new WOW().init();
+
+
+		
+
+		
+
+	</script>
+</head>
+<body>
+
+	<header id="main_header">
+		<div id="header_top" class="clearfix">
+			<div class="logobox">
+				<a href="#"><img src="images/logo.jpg" alt=""></a>
+			</div>
+		
+			
+			<nav id="main_menu">
+				<ul class="clearfix">
+					  <li><a href="#">About</a></li>
+					  <li><a href="#">Store</a></li>
+					 
+				</ul>
+			</nav>
+		</div>
+		
+
+ 
+			<div class="content">
+				
+						
+
+		</div>
+	</header>
+	<div class="slider_wrap">
+				<ul class="slider">
+					<li class="first">
+						
+						
+					</li>
+
+
+					<li class="second">
+						<div class="slider_txt">
+							
+
+						</div>
+					</li>
+
+
+			
+				</ul>
+					<div class="prevBtn"><a href="#">
+			<!-- src="javascript:void(0) 앵커태그 방지 -->
+			<img src="images/btn_prev.png" alt=""></a></div>
+
+		<div class="nextBtn">
+			<a href="#">
+				<img src="images/btn_next.png" alt="" class="pc_btn"> 
+			<!-- <img src="images/btn_next2.png" alt="" class="tablet_btn"> -->
+		</a></div>
+
+
+
+
+
+				
+			</div>
+                
+
+
+
+	<!-- <footer id="footer_wrap">
+		<div class="footer clearfix">
+			<div class="logo"><img src="images/footer_logo.png" alt=""></div>
+			<div class="copy">
+				<ul class="clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li class="del"><a href="#">고객센터</a></li>
+					<li class="del"><a href="#">상담문의</a></li>
+					<li class="del"><a href="#">사이트맵</a></li>
+				</ul>
+				<address class="copy_wrap">
+					(12345) 서울특별시 강남구 강남북로 1234 강남타워 22층 대표이사 : 홍길동<br>
+					사업자등록번호 : 123 - 45 - 33456 통신판매업 신고번호 : 제 2020 - 2020202호 개인정보 보호 책임자 : 홍길동(admin@company.com)<br> COPYRIGHT (C) 2020 BY COMPANY ALL RIGHTS RESERVED.
+				</address>
+			</div>
+		</div>
+	</footer> -->
+		
+	
+	
+</body>
+</html>
