@@ -18,7 +18,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			var myslider = $(".slider").bxSlider();
+			var myslider = $(".slider").bxSlider({
+				// mode:'vertical'
+			});
 			
 			var slider2Btn = $(".slider2").bxSlider({
 				pager:false,controls:false});
@@ -196,10 +198,10 @@
 						<ul class="slider2">
 							<li class="clearfix">
 								<div class="left">글램빈티지 새로운 쇼룸
-						    부산 지점 오픈,오픈 이벤트
-						    진행 Lorem ipsum dolor sit amet </div>
-
-								<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
+															    부산 지점 오픈,오픈 이벤트
+															    진행 Lorem ipsum dolor sit amet </div>
+									
+									<a href="board.html"><div class="right"><img src="images/main_img_01_02.jpg" alt=""></div></a>
 							</li>
 
 								<li class="clearfix">
@@ -230,8 +232,8 @@
 
 					<li class="content5st wow fadeInUp" data-wow-delay="0.8s">
 						
-							<img src="images/logo2.png" alt="store">
-							<p>Store</p>
+							<a href="contact.html"><img src="images/logo2.png" alt="store">
+								<p style="color:white">Contact</p></a>
 						
 					</li>
 					
@@ -443,8 +445,8 @@
 						</ul>
 
 						<div class="btn2 clearfix">
-							<img src="images/slider2-icon01.png" alt="prev" class="prev">
-							<img src="images/slider2-icon02.png" alt="next" class="next">
+							<img src="images/slider2-icon01.png" alt="prev" class="prev" style="cursor:pointer">
+							<img src="images/slider2-icon02.png" alt="next" class="next"  style="cursor:pointer">
 							
 						</div>
 					
